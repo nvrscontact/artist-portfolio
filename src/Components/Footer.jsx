@@ -7,7 +7,7 @@ function Footer() {
   
   return (
     <>
-    <div className='bg-black/80 text-white/60 pl-6 pt-6'>
+    <div className='bg-black/80 text-white/60 p-6'>
 
       <li className='flex gap-4 [&>*>*]:h-4 '>
           <a href="https://facebook.com"><img src="/images/youtube.svg" alt="" /></a>
@@ -17,9 +17,9 @@ function Footer() {
           <a href="https://facebook.com"><img src="/images/x.svg" alt="" /></a>
       </li>
     
-      <section className='flex my-8 gap-7'>
+      <section className='flex my-6 gap-7 border-y py-6 border-white/20'>
 
-        <div className='flex flex-col gap-6 [&>*>*]:text-[10px] [&>*]:gap-2 '>
+        <div className='flex flex-col gap-6 [&>*>*]:text-[11px] [&>*]:gap-2 '>
 
           <section className='flex flex-col'>
             <span className='text-sm'> {textos.greeting} </span>
@@ -35,17 +35,18 @@ function Footer() {
 
         </div>
 
-        <div className='flex flex-col [&>*]:text-[10px] gap-2'>
+        <div className='flex flex-col [&>*]:text-[11px] gap-2'>
           <span className='text-sm'>Privacy</span>
           <span className='text-sm'>Cookies</span>
           <span className='text-sm'>Privacy</span>
         </div>
+
       </section>
 
       <section className='flex flex-col gap-1'>
       <p className='text-[8px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi qui unde ea placeat, voluptatum amet recusandae voluptate tempore doloribus ipsam optio, minima iste repellat ratione. Culpa, provident tempora? Excepturi!</p>
       <span className='text-[8px] mb-4'>If you have accessibility or payment issues, contact us as soon as possible!</span>
-      <span className='text-[8px] mb-6'>© 2025 Taylor Swift, LLC. <br />All Rights Reserved</span>  
+      <span className='text-[8px] border-t w-fit py-4 border-white/20'>© 2025 Taylor Swift, LLC. <br />All Rights Reserved</span>  
       </section>
 
     </div>
