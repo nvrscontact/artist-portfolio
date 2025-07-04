@@ -1,8 +1,9 @@
-import React from 'react'
 
 import Hero_Swift from '../assets/hero_swift.jpg'
 
+
 function Hero() {
+
   return (
     <>
     <div className='my-5'>
