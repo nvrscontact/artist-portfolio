@@ -7,6 +7,8 @@ import Layout from './Layout';
 
 import HomePage from './Pages/HomePage'
 import AboutMe from './Pages/AboutMe';
+import Hear from './Pages/Hear';
+import Albums from './Pages/Albums';
 
 import {LanguageProvider} from './languages/context/LanguageContext';
 
@@ -22,6 +24,8 @@ function App() {
               <Route index element={<HomePage/>}/>
               <Route path='/' element={<HomePage/>} />
               <Route path='/aboutme' element={<AboutMe/>} />
+              <Route path='/hear' element={<Hear/>} />
+              <Route path='/albums' element={<Albums/>} />
 
             </Route>
           </Routes>

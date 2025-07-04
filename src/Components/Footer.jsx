@@ -7,7 +7,7 @@ function Footer() {
   
   return (
     <>
-    <div className='bg-black/90 text-white/60 p-6'>
+    <div className=' text-white/60 p-6'>
 
       <li className='flex gap-4 [&>*>*]:h-4 '>
           <a href="https://facebook.com"><img src="/images/youtube.svg" alt="" /></a>
@@ -23,8 +23,8 @@ function Footer() {
 
           <section className='flex flex-col'>
             <span className='text-sm'> {textos.greeting} </span>
-            <span className='text-sm'>Cookies</span>
-            <span className='text-sm'>Privacy</span>
+            <span className='text-sm'>Terms of Use</span>
+            <span className='text-sm'>Legal</span>
           </section>
 
           <section className='flex flex-col'>
@@ -46,7 +46,7 @@ function Footer() {
       <section className='flex flex-col'>
       <p className='text-[8px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi qui unde ea placeat, voluptatum amet recusandae voluptate tempore doloribus ipsam optio, minima iste repellat ratione. Culpa, provident tempora? Excepturi!</p>
       <span className='text-[8px]'>If you have accessibility or payment issues, contact us as soon as possible!</span>
-      <span className='text-[8px] my-6'>© 2025 Taylor Swift, LLC. <br />All Rights Reserved</span>  
+      <span className='text-[8px] mt-4'>© 2025 Taylor Swift, LLC. <br />All Rights Reserved</span>  
       </section>
 
     </div>
