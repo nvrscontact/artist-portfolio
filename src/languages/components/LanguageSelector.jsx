@@ -4,6 +4,7 @@ import {LanguageContext} from '../context/LanguageContext';
 import Germany from '../../assets/germany.svg'
 import Spain from '../../assets/spain.svg'
 import France from '../../assets/france.svg'
+import Uk from '../../assets/uk.svg'
 
 
 const LanguageSelector = () => {
@@ -22,6 +23,7 @@ const LanguageSelector = () => {
         {codigo: 'es', nombre:'español',bandera:Spain},
         {codigo: 'de', nombre:'Deutsch',bandera:Germany},
         {codigo: 'fr', nombre:'Français',bandera:France},
+        {codigo: 'en', nombre:'English',bandera:Uk},
     ]
     
 
@@ -58,23 +60,32 @@ const LanguageSelector = () => {
         
     
 {/* el usuario presiona la bandera y se dispara la funcion alternarMenu que abre el menu...
-se ejecuta seleccionarIdioma('fr')     
+se ejecuta seleccionarIdioma('fr') que al clicker un pais este tiene incrustado el codigo de idioma y luego se lo pasa
+a setIdioma actualizando el idioma global y luego cerrandose el MenuAbierto...
+
         */}
 
 
-
+        {/* este boton puede mostrar los valores de las banderas gracias al parametro default otorgado 'es' */}
         <button onClick={alternarMenu} className='flex items-center gap-2'>
             <img src={idiomaActual.bandera} alt='' className='h-4' />
             {idiomaActual.nombre}
         </button>
 
-        <div className='relative'>
+
+    {/* forma abreviada de menuAbierto === true/false, si es true muestra el div. */}
+        <section className='relative'>
          {menuAbierto && (
 
+            /* recorre en bucle el array de idiomas y los lista y para diferenciarlos usa el idioma.contigo como key */
             <div> {idiomasDisponibles.map((idioma) => (
 
+                /* estas serian las pequeñas cajas que al presionar le cedemos el codigo del idioma a selectidioma*/
+                /* como parametro y luego lo usa para actualizar setIdioma */
+                /*  */
                 <div key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)}>
 
+                    {/* esto muestra la imagen del idioma segun .bandera y el nombre segun el .nombre */}
                     <img src={idioma.bandera} alt="" className='h-4' />
                     {idioma.nombre}
 
@@ -82,7 +93,7 @@ se ejecuta seleccionarIdioma('fr')
 
             </div>)}
 
-        </div>
+        </section>
     
 
     </div>
