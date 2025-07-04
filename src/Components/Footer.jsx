@@ -1,7 +1,10 @@
-import React from 'react'
+
+import React, {useContext} from 'react';
+import {LanguageContext} from '../languages/context/LanguageContext';
 
 function Footer() {
-
+      const {textos} = useContext(LanguageContext);
+  
   return (
     <>
     <div className='bg-black/70 p-6 text-center text-white/60'>
@@ -17,7 +20,7 @@ function Footer() {
     <section className='flex justify-between my-10'>
 
       <div className='flex flex-col gap-3'>
-        <span className='text-sm'>Privacy</span>
+        <span className='text-sm'> {textos.greeting} </span>
         <span className='text-sm'>Cookies</span>
         <span className='text-sm'>Privacy</span>
       </div>
