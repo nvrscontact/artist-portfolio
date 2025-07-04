@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import {LanguageContext} from '../languages/context/LanguageContext';
 import Hero_Swift from '../assets/hero_swift.jpg'
+import {Link} from 'react-router-dom'
 
 import Midnights_Album from '../assets/midnights_album.jpg'
 
@@ -19,7 +20,7 @@ function Hero() {
       </section>
       
       <section className='absolute z-1 bottom-6 left-6'>
-      <a href="/albums">Stream Now</a>
+      <Link to="/albums">Stream Now</Link>
       </section>
 
       <section className='absolute z-1 flex flex-col bottom-6 right-6 text-end'>
