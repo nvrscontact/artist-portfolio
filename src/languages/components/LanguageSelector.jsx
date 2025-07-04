@@ -45,10 +45,10 @@ const LanguageSelector = () => {
         <section className='relative'>
          {menuAbierto && (
 
-            <div className='absolute top-4 right-0.5  z-2 bg-black'> {idiomasDisponibles.map((idioma) => (
+            <div className='absolute top-4 right-0.5  z-2 '> {idiomasDisponibles.map((idioma) => (
 
                 
-                <div key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='bg-black'>
+                <div key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='bg-black/70'>
 
                     <section className='flex w-20 gap-2 p-3'>
                     <span className='text-[10px] '>{idioma.nombre} </span>

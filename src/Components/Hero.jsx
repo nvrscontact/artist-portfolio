@@ -10,13 +10,20 @@ function Hero() {
     <>
     <div className='flex flex-col'>
       
-    {textos.greeting}
     
-    <div className='my-5 relative'>
-      <span className='absolute'>Taylor Swift</span>
+    <div className='relative'>
+      <section className='absolute flex flex-col m-4 p-2'>
+      <span className='text-white'>Taylor Swift</span>
+      <span className='text-white text-sm '>Pop, ElectroPop.</span>
+      </section>
+      <section className='absolute flex flex-col bottom-6 right-6'>
+      <span className='text-white'>#1 USA.</span>
+      <span className=' text-white '>Spotify.</span>
+      </section>
       <img src={Hero_Swift} alt="" className=' ' />
     </div>
 
+    {textos.greeting}
 
     </div>
     </>

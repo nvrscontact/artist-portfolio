@@ -24,7 +24,7 @@ function NavBar() {
   return (
     <>
 
-    <section className='bg-black/80 text-white'>
+    <section className='bg-black/90 text-white'>
       <div className=' flex justify-between mx-4 my-3'>
 
         <button onClick={toggleMenu}><img src={Hamburger_Menu} alt="" className='h-6' /></button>
