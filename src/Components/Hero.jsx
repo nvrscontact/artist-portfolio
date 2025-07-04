@@ -8,9 +8,16 @@ function Hero() {
 
   return (
     <>
+    <div className='flex flex-col'>
+      
     {textos.greeting}
-    <div className='my-5'>
-      <img src={Hero_Swift} alt="" className='' />
+    
+    <div className='my-5 relative'>
+      <span className='absolute'>Taylor Swift</span>
+      <img src={Hero_Swift} alt="" className=' ' />
+    </div>
+
+
     </div>
     </>
   )
