@@ -24,28 +24,30 @@ function NavBar() {
   return (
     <>
 
-    <section className='bg-black/90 text-white'>
-      <div className=' flex justify-between mx-4 my-3'>
-
+    <section className='bg-black/90 text-white relative z-2'>
+      <
+        div className='flex justify-between mx-4 my-3 items-center'>
         <button onClick={toggleMenu}><img src={Hamburger_Menu} alt="" className='h-6' /></button>
-        <div ref={menuRef} style={{display: 'none', position: 'absolute', top: '35px', left: '5px' }}>
-                <ul className='border border-white/30 rounded-[16px] '>
-                  <li className='flex flex-col text-white/60 backdrop-blur-md bg-white/10 text-[11px] p-2 m-1 rounded-xl '>
-                  <span className='p-[6px]' onClick={closeMenu}><Link to='/aboutme'>About Me</Link> </span>
-                  <span className='p-[6px]' onClick={closeMenu}><Link to='/'>Store</Link> </span>
-                  <span className='p-[6px]' onClick={closeMenu}><Link to='/'>Home</Link> </span>
-                  <span className='p-[6px]' onClick={closeMenu}><Link to='/'>Home</Link> </span>
-                  <span className='p-[6px]' onClick={closeMenu}><Link to='/'>Home</Link> </span>
+        <div ref={menuRef} className='hidden absolute top-12 '>
+                  <li className='flex text-white/70 text-[12px] gap-[1px] [&>*]:p-[9px]  '>
+                  <span className=' bg-black/60' onClick={closeMenu}><Link to='/aboutme'>About Me</Link> </span>
+                  <span className=' bg-black/60' onClick={closeMenu}><Link to='/'>Store</Link> </span>
+                  <span className=' bg-black/60' onClick={closeMenu}><Link to='/'>Albums</Link> </span>
+                  <span className=' bg-black/60' onClick={closeMenu}><Link to='/'>Tour</Link> </span>
+                  <span className=' bg-black/60' onClick={closeMenu}><Link to='/'>Home</Link> </span>
                   </li>
-                </ul>
         </div>
 
-        <LanguageSelector/>
 
+        <LanguageSelector/>
       </div>
+
     </section>
     </>
   )
 }
 
 export default NavBar
+
+
+/* backdrop-blur-md */

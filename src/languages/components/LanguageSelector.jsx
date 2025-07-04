@@ -36,8 +36,8 @@ const LanguageSelector = () => {
     return (
     <div>
 
-        <button onClick={alternarMenu} className='flex items-end gap-2'>
-            <span className='text-[12px] text-white/80'>{idiomaActual.nombre}</span> 
+        <button onClick={alternarMenu} className='flex item gap-2'>
+            <span className='text-[11px] text-white/80'>{idiomaActual.nombre}</span> 
             <img src={idiomaActual.bandera} alt='' className='h-4' />
         </button>
 
@@ -45,13 +45,13 @@ const LanguageSelector = () => {
         <section className='relative'>
          {menuAbierto && (
 
-            <div className='absolute top-4 right-0.5  z-2 '> {idiomasDisponibles.map((idioma) => (
+            <div className='absolute top-4 right-0 z-2 flex flex-col gap-[1px]'> {idiomasDisponibles.map((idioma) => (
 
                 
-                <div key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='bg-black/70'>
+                <div key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='bg-black/60'>
 
-                    <section className='flex w-20 gap-2 p-3'>
-                    <span className='text-[10px] '>{idioma.nombre} </span>
+                    <section className='flex w-20 gap-2 p-[10px] '>
+                    <span className='text-[11px] '>{idioma.nombre} </span>
                     <img src={idioma.bandera} alt="" className='h-4' />
                     </section>
 

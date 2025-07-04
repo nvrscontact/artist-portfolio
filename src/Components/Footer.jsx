@@ -17,7 +17,7 @@ function Footer() {
           <a href="https://facebook.com"><img src="/images/x.svg" alt="" /></a>
       </li>
     
-      <section className='flex my-6 gap-7 border-y py-6 border-white/20'>
+      <section className='flex my-6 gap-7 border-y py-6 border-white/10'>
 
         <div className='flex flex-col gap-6 [&>*>*]:text-[11px] [&>*]:gap-2 '>
 
@@ -46,7 +46,7 @@ function Footer() {
       <section className='flex flex-col'>
       <p className='text-[8px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi qui unde ea placeat, voluptatum amet recusandae voluptate tempore doloribus ipsam optio, minima iste repellat ratione. Culpa, provident tempora? Excepturi!</p>
       <span className='text-[8px]'>If you have accessibility or payment issues, contact us as soon as possible!</span>
-      <span className='text-[8px] border-t w-fit pt-4 mt-6 border-white/20'>© 2025 Taylor Swift, LLC. <br />All Rights Reserved</span>  
+      <span className='text-[8px] my-6'>© 2025 Taylor Swift, LLC. <br />All Rights Reserved</span>  
       </section>
 
     </div>
