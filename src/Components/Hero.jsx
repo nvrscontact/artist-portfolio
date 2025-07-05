@@ -20,11 +20,11 @@ function Hero() {
         <span className='text-white/80 text-[12px] inter-200'>Pop, ElectroPop</span>
       </section>
       
-      <section className='absolute z-1 bottom-6 left-6 bg-black/50 rounded-xl p-1'>
+      <section className='absolute z-1 bottom-6 left-6 bg-black/50 rounded-md p-[2px] '>
         
-        <div className='flex items-center gap-1 bg-white/10 rounded-md py-1 px-2'>
-        <span className='text-white/70 text-sm inter-200'> <Link to="/albums">Stream</Link></span>
-        <img src={LinkImg} alt="" className='h-3' />
+        <div className='flex items-center gap-[2px] bg-white/10 rounded-md py-1 px-2'>
+        <span className='text-white/70 text-[12px] inter-200'> <Link to="/albums">Stream</Link></span>
+        <img src={LinkImg} alt="" className='h-2' />
         </div>
 
       </section>
@@ -48,10 +48,10 @@ function Hero() {
         <div>#Tour 2026.</div>
       </div>
       <div class="flex shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200">
-        <div>Tour 2025.</div>
-        <div>Midnights Available Now!</div>
+        <div>#Tour2025.</div>
+        <div>Midnights Available!</div>
         <div>Buy Album and Merch</div>
-        <div>#Tour2026.</div>
+        <div>#Tour 2026.</div>
       </div>
 
     </div>
