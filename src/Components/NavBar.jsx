@@ -28,12 +28,12 @@ function NavBar() {
       <div className='flex justify-between mx-4 my-3 items-center'>
         <button onClick={toggleMenu}><img src={Hamburger_Menu} alt="" className='h-6' /></button>
         <div ref={menuRef} className='hidden absolute top-12 '>
-                  <li className='flex text-white/70 text-[12px] gap-[1px] [&>*]:p-[9px]  '>
-                  <span className=' bg-black/60' onClick={closeMenu}><Link to='/aboutme'>About Me</Link> </span>
-                  <span className=' bg-black/60' onClick={closeMenu}><Link to='/'>Store</Link> </span>
-                  <span className=' bg-black/60' onClick={closeMenu}><Link to='/albums'>Albums</Link> </span>
-                  <span className=' bg-black/60' onClick={closeMenu}><Link to='/'>Tour</Link> </span>
-                  <span className=' bg-black/60' onClick={closeMenu}><Link to='/'>Home</Link> </span>
+                  <li className='flex flex-col text-white/70 text-[12px] gap-[1px] [&>*]:p-[9px] backdrop-blur-xl  '>
+                  <span className=' bg-black/70' onClick={closeMenu}><Link to='/aboutme'>About Me</Link> </span>
+                  <span className=' bg-black/70' onClick={closeMenu}><Link to='/'>Store</Link> </span>
+                  <span className=' bg-black/70' onClick={closeMenu}><Link to='/albums'>Albums</Link> </span>
+                  <span className=' bg-black/70' onClick={closeMenu}><Link to='/'>Tour</Link> </span>
+                  <span className=' bg-black/70' onClick={closeMenu}><Link to='/'>Home</Link> </span>
                   </li>
         </div>
 

@@ -1,10 +1,22 @@
-
-.cormorant-garamond-four {
-  font-family: "Cormorant Garamond", serif;
+.inter-100 {
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 100;
   font-style: normal;
 }
+.inter-200 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.inter-300 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
    .carousel-track {
       animation: scroll-left 20s linear infinite;
