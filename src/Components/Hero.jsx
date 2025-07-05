@@ -35,7 +35,7 @@ function Hero() {
         <span className='text-white/80 text-[12px] inter-100'>#2 Apple Music</span>
       </section>
 
-      <img src={Hero_Swift} alt="" className="brightness-75" />
+      <img src={Hero_Swift} alt="" className="brightness-60 " />
     </div>
 
   <div class="overflow-hidden w-[100vw] mt-1">
