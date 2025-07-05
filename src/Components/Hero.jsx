@@ -35,21 +35,21 @@ function Hero() {
     </div>
 
   <div class="overflow-hidden w-[100vw] ">
-    <div class="flex carousel-track">
+    <div class="flex carousel-track hover:[animation-play-state:paused] ">
       
-      <div class="flex shrink-0 space-x-4 px-4">
-        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 1</div>
-        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 2</div>
-        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 3</div>
-        <div class="w-[100vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 4</div>
+      <div class="flex shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/90 text-white/80">
+        <div>#Tour2025.</div>
+        <div>Midnights Available!</div>
+        <div>Buy Album and Merch</div>
+        <div>#Tour 2026.</div>
       </div>
-      <div class="flex shrink-0 space-x-4 px-4">
-        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 1</div>
-        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 2</div>
-        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 3</div>
-        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 4</div>
+      <div class="flex shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/90 text-white/80">
+        <div>Tour 2025.</div>
+        <div>Midnights Available Now!</div>
+        <div>Buy Album and Merch</div>
+        <div>#Tour2026.</div>
       </div>
-      
+
     </div>
   </div>
 

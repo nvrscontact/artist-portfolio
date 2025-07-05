@@ -8,6 +8,7 @@
 
    .carousel-track {
       animation: scroll-left 20s linear infinite;
+      animation-timing-function: linear;
     }
 
     @keyframes scroll-left {
