@@ -37,7 +37,7 @@ const LanguageSelector = () => {
     <div>
 
         <button onClick={alternarMenu} className='flex item gap-2'>
-            <span className='text-[11px] text-white/80'>{idiomaActual.nombre}</span> 
+            <span className='text-[11px] inter-200 text-white/70'>{idiomaActual.nombre}</span> 
             <img src={idiomaActual.bandera} alt='' className='h-4' />
         </button>
 
@@ -50,7 +50,7 @@ const LanguageSelector = () => {
                 
                 <div key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='bg-black/60'>
 
-                    <section className='flex w-20 gap-2 p-[10px] '>
+                    <section className='flex w-20 gap-2 p-[10px] inter-200 text-white/70 '>
                     <span className='text-[11px] '>{idioma.nombre} </span>
                     <img src={idioma.bandera} alt="" className='h-4' />
                     </section>

@@ -16,7 +16,7 @@ function Hero() {
     
     <div className='relative'>
       <section className='absolute z-1 flex flex-col ml-4 mt-6 p-2'>
-        <span className='text-white/80 text-[18px] inter-100 '>Taylor Swift</span>
+        <span className='text-white/80 text-[18px] inter-100 '>Taylor Alisson Swift</span>
         <span className='text-white/80 text-[12px] inter-200'>Pop, ElectroPop</span>
       </section>
       
@@ -41,13 +41,13 @@ function Hero() {
   <div class="overflow-hidden w-[100vw] mt-1">
     <div class="flex carousel-track hover:[animation-play-state:paused] ">
       
-      <div class="flex shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/60 text-white/80">
+      <div class="flex shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200">
         <div>#Tour2025.</div>
         <div>Midnights Available!</div>
         <div>Buy Album and Merch</div>
         <div>#Tour 2026.</div>
       </div>
-      <div class="flex shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/60 text-white/80">
+      <div class="flex shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200">
         <div>Tour 2025.</div>
         <div>Midnights Available Now!</div>
         <div>Buy Album and Merch</div>
@@ -60,18 +60,17 @@ function Hero() {
 
     <section className='mt-16 text-white flex flex-col items-center'>
       <div className='flex flex-col items-center mb-2'>
-        <h1 className='text-[20px]'>Midnights</h1>
-        <span className='bg-black/40 py-1 px-2 rounded-md text-[11px]'>New Album</span>
-      </div>
-      <div className='flex gap-5 text-[12px] mb-2'>
-        <span className='text-white/40'>Available Now</span>·
-        <span className='text-white/40'>3 Feb, 2025</span>
+        <h1 className='text-[20px] inter-100'>Midnights</h1>
+        <span className='bg-black/60 py-1 px-2 rounded-md text-[11px] inter-200'>New Album</span>
       </div>
       <img src={Midnights_Album} alt="" className='h-52 w-52 mb-1'/>
-      <div className='flex items-center gap-1 text-[12px] '>
-        <span className='bg-white/10 border-[2px] border-black/70 py-[6px] px-3 text-[12px] '>Merch</span>
-        <span className='bg-white/10 border-[2px] border-black/70 py-[6px] px-2 text-[12px] flex items-center gap-1'>Buy Album<img src={LinkImg} alt="" className='h-2' /></span>
-        <span className='bg-white/10 border-[2px] border-black/70 py-[6px] px-3 text-[12px] '>Tour</span>
+      <div className='flex flex-col items-center gap-1 text-[12px] '>
+      <p className='text-[11px] my-2 text-white/60 w-60 text-center inter-200'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem at earum a eaque. Molestiae pariatur rem porro.</p>
+        <section className='flex gap-1 inter-200'>
+        <span className='bg-white/10 border-[2px] border-black/70 py-[6px] px-3 text-[12px] rounded-md '>Merch</span>
+        <span className='bg-white/10 border-[2px] border-black/70 py-[6px] px-2 text-[12px] rounded-md flex items-center gap-1'>Buy Album<img src={LinkImg} alt="" className='h-2' /></span>
+        <span className='bg-white/10 border-[2px] border-black/70 py-[6px] px-3 text-[12px] rounded-md'>Merch</span>
+        </section>
       </div>
     </section>
 
