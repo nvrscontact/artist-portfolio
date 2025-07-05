@@ -11,6 +11,8 @@ import Hear from './Pages/Hear';
 import Albums from './Pages/Albums';
 
 import {LanguageProvider} from './languages/context/LanguageContext';
+import Tour from './Pages/Tour';
+import Store from './Pages/Store';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
               <Route path='/aboutme' element={<AboutMe/>} />
               <Route path='/hear' element={<Hear/>} />
               <Route path='/albums' element={<Albums/>} />
+              <Route path='/tour' element={<Tour/>} />
+              <Route path='/store' element={<Store/>} />
 
             </Route>
           </Routes>

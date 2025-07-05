@@ -20,9 +20,9 @@ function Hero() {
         <span className='text-white/80 text-[12px] inter-200'>Pop, ElectroPop</span>
       </section>
       
-      <section className='absolute z-1 bottom-6 left-6 bg-black/50 rounded-md p-[2px] '>
+      <section className='absolute z-1 bottom-6 left-6 '>
         
-        <div className='flex items-center gap-[2px] bg-white/10 rounded-md py-1 px-2'>
+        <div className='flex items-center gap-[2px] bg-white/10 border-[1px] border-black rounded-md py-1 px-2'>
         <span className='text-white/70 text-[12px] inter-200'> <Link to="/albums">{textos.stream}</Link></span>
         <img src={LinkImg} alt="" className='h-2' />
         </div>
@@ -67,9 +67,9 @@ function Hero() {
       <div className='flex flex-col items-center gap-1 text-[12px] '>
       <p className='text-[11px] my-2 text-white/60 w-60 text-center inter-200'>{textos.new_album_description} </p>
         <section className='flex gap-1 inter-200'>
-        <span className='bg-white/10 border-[2px] border-black/70 py-[6px] px-3 text-[12px] rounded-md '>Merch</span>
-        <span className='bg-white/10 border-[2px] border-black/70 py-[6px] px-2 text-[12px] rounded-md flex items-center gap-1'>Buy Album<img src={LinkImg} alt="" className='h-2' /></span>
-        <span className='bg-white/10 border-[2px] border-black/70 py-[6px] px-3 text-[12px] rounded-md'>Merch</span>
+        <span className='bg-white/10 border-[1px] border-black/70 py-[6px] px-3 text-[12px] rounded-md '>Merch</span>
+        <span className='bg-white/10 border-[1px] border-black/70 py-[6px] px-2 text-[12px] rounded-md flex items-center gap-1'>Buy Album<img src={LinkImg} alt="" className='h-2' /></span>
+        <span className='bg-white/10 border-[1px] border-black/70 py-[6px] px-3 text-[12px] rounded-md'>Merch</span>
         </section>
       </div>
     </section>

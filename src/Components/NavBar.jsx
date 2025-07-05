@@ -30,9 +30,9 @@ function NavBar() {
         <div ref={menuRef} className='hidden absolute top-12 '>
                   <li className='flex flex-col text-white/70 text-[12px] gap-[1px] [&>*]:p-[9px] inter-200 backdrop-blur-xl  '>
                   <span className=' bg-black/70' onClick={closeMenu}><Link to='/aboutme'>About Me</Link> </span>
-                  <span className=' bg-black/70' onClick={closeMenu}><Link to='/'>Store</Link> </span>
+                  <span className=' bg-black/70' onClick={closeMenu}><Link to='/store'>Store</Link> </span>
                   <span className=' bg-black/70' onClick={closeMenu}><Link to='/albums'>Albums</Link> </span>
-                  <span className=' bg-black/70' onClick={closeMenu}><Link to='/'>Tour</Link> </span>
+                  <span className=' bg-black/70' onClick={closeMenu}><Link to='/tour'>Tour</Link> </span>
                   <span className=' bg-black/70' onClick={closeMenu}><Link to='/'>Home</Link> </span>
                   </li>
         </div>
