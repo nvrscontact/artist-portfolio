@@ -34,20 +34,40 @@ function Hero() {
       <img src={Hero_Swift} alt="" className="brightness-75" />
     </div>
 
+  <div class="overflow-hidden w-[100vw] ">
+    <div class="flex carousel-track">
+      
+      <div class="flex shrink-0 space-x-4 px-4">
+        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 1</div>
+        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 2</div>
+        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 3</div>
+        <div class="w-[100vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 4</div>
+      </div>
+      <div class="flex shrink-0 space-x-4 px-4">
+        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 1</div>
+        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 2</div>
+        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 3</div>
+        <div class="w-[70vw] sm:w-[40vw] md:w-[25vw] bg-white text-black rounded-lg shadow p-4 text-center">Card 4</div>
+      </div>
+      
+    </div>
+  </div>
+
+
     <section className='mt-16 text-white flex flex-col items-center'>
       <div className='flex flex-col items-center mb-2'>
-        <h1 className='text-[20px] '>Midnights</h1>
+        <h1 className='text-[20px] bg-gradient-to-r from-purple-300 to-cyan-500 bg-clip-text text-transparent'>Midnights</h1>
         <span className='bg-black/40 py-1 px-2 rounded-md text-[11px]'>New Album</span>
       </div>
-      <div className='flex gap-5 text-[12px] mb-3 '>
+      <div className='flex gap-5 text-[12px] mb-2'>
         <span className='text-white/40'>Available Now</span>·
         <span className='text-white/40'>3 Feb, 2025</span>
       </div>
-      <img src={Midnights_Album} alt="" className='h-52 w-52 mb-2'/>
-      <div className='flex gap-1 text-[12px] '>
-        <section className='bg-black/40 w-fit h-fit py-2 px-1'><span className='bg-white/10 py-[7px] px-2 text-white/60 '>Merch</span></section>
-        <section className='bg-black/40 w-fit h-fit py-[2px] px-1 '><span className='bg-white/10 py-[6px] px-2 flex items-center gap-1 text-white/80'>Buy Album<img src={LinkImg} alt="" className='h-3' /></span></section>
-        <section className='bg-black/40 w-fit h-fit py-2 px-1'><span className='bg-white/10 py-[7px] px-2 text-white/60'>Tour</span></section>
+      <img src={Midnights_Album} alt="" className='h-52 w-52 mb-1 border-t py-1 border-white/30'/>
+      <div className='flex items-center gap-1 text-[12px] '>
+        <span className='bg-white/10 border-[3px] border-black/70 py-[6px] px-3 text-[12px] '>Merch</span>
+        <span className='bg-white/10 border-[3px] border-black/70 py-[6px] px-2 text-[12px] flex items-center gap-1'>Buy Album<img src={LinkImg} alt="" className='h-2' /></span>
+        <span className='bg-white/10 border-[3px] border-black/70 py-[6px] px-3 text-[12px] '>Tour</span>
       </div>
     </section>
 
