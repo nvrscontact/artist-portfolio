@@ -45,8 +45,8 @@ function Footer() {
 
       <section className='flex flex-col inter-100'>
       <p className='text-[8px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi qui unde ea placeat, voluptatum amet recusandae voluptate tempore doloribus ipsam optio, minima iste repellat ratione. Culpa, provident tempora? Excepturi!</p>
-      <span className='text-[8px]'>If you have accessibility or payment issues, contact us as soon as possible!</span>
-      <span className='text-[8px] mt-4'>© 2025 Taylor Swift, LLC. <br />All Rights Reserved</span>  
+      <span className='text-[8px]'>{textos.accesibility_problems}</span>
+      <span className='text-[8px] mt-4'>© 2025 Taylor Swift, LLC. <br />{textos.rights_reserved}</span>  
       </section>
 
     </div>
