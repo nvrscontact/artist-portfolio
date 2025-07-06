@@ -10,7 +10,7 @@ const idiomas = {en,es,fr,de}
 export const LanguageContext = createContext()
 
 export const LanguageProvider = ({ children }) => {
-    const [idioma,setIdioma] = useState('es');
+    const [idioma,setIdioma] = useState('en');
 
     const textos = idiomas[idioma];
 

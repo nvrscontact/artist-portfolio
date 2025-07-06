@@ -2,9 +2,9 @@ export default {
   greeting: "Hola",
   language: "Idioma",
 
-  stream: 'Escuchar',
-
-  album_available:'Disponible',
+  stream: 'Escuchar Ahora',
+  stream_description:'En Teléfonos, PC o Tablet',
+  album_available:'Álbum Disponible',
   runs_out:'Compra el album antes de que se agote!',
 
 
