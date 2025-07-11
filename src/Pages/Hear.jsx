@@ -21,33 +21,35 @@ function Hear() {
   const OpenLink = (url) => {
     window.open(url,'_blank','noopener')
   };
-/*   const handleGoToLink = () => {
-    if (selectedImage && selectedImage.spotify) {
-      window.open(selectedImage.spotify, '_blank', 'noopener,noreferrer');
-      }
-  } */
 
 
 
   return (
     <>
+    <div className='w-full'>
 
-    <div className='text-white'>
-      <h2>{title}</h2>
-      <button onClick={() => OpenLink(links.spotify)}>
-        spotify
-      </button>
-      <button onClick={() => OpenLink(links.youtube)}>
-        youtube
-      </button>
-      <button onClick={() => OpenLink(links.apple)}>
-        apple
-      </button>
+    <div className='text-white flex flex-col mt-10'>
+      <section className='flex flex-col items-center'>
+      <h2 className='mb-2'>{title}</h2>
+      <img src={src} alt="" className='h-40 w-40 mb-2' />
+      </section>
+      <section className='flex flex-col gap-3 pl-12 mt-6'>
+        <button onClick={() => OpenLink(links.spotify)} className='flex gap-2 items-center'>
+          <img src={Spotify} alt="" className='h-5'/>
+          Spotify
+        </button>
+        <button onClick={() => OpenLink(links.youtube)} className='flex gap-2 items-center'>
+          <img src={YoutubeMusic} alt="" className='h-5' />
+          Youtube Music
+        </button>
+        <button onClick={() => OpenLink(links.apple)} className='flex gap-2 items-center'>
+          <img src={AppleMusic} alt="" className='h-5'/>
+          Apple Music
+        </button>
+      </section>
     </div>
 
-      <section className='text-white w-full'>
-
-      </section>
+    </div>
     </>
   )
 }
