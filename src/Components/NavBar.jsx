@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import LanguageSelector from "../languages/components/LanguageSelector";
+import LanguageSelector from "../contexts/languages/components/LanguageSelector";
 
 
 import Hamburger_Menu from '../assets/hamburger_menu.svg'

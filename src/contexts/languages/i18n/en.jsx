@@ -9,7 +9,7 @@ export default {
 
 
   new_album:'New Album',
-  new_album_description:'Lorem ipsum dolor sit amet consectetur discounts. But his pleasure at these symptoms. The annoyance will be delivered from now on',
+  new_album_description:'Lorem ipsum dolor sit amet consectetur discounts. But his pleasure at symptoms.',
 
   contact: 'Contact',
   refunds:'Refunds',

@@ -1,10 +1,12 @@
 import React, {useContext, useState} from 'react';
 import {LanguageContext} from '../context/LanguageContext';
 
-import Germany from '../../assets/germany.svg'
-import Spain from '../../assets/spain.svg'
-import France from '../../assets/france.svg'
-import Uk from '../../assets/uk.svg'
+/* /context/LanguageContext */
+
+import Germany from '../../../assets/germany.svg'
+import Spain from '../../../assets/spain.svg'
+import France from '../../../assets/france.svg'
+import Uk from '../../../assets/uk.svg'
 
 
 const LanguageSelector = () => {

@@ -1,6 +1,8 @@
 
 import React, {useContext} from 'react';
-import {LanguageContext} from '../languages/context/LanguageContext';
+import {LanguageContext} from '../contexts/languages/context/LanguageContext';
+
+/* '../languages/context/LanguageContext' */
 
 function Footer() {
       const {textos} = useContext(LanguageContext);

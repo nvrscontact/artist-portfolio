@@ -6,7 +6,7 @@ import Footer from './Components/Footer'
 function Layout() {
   return (
     <>
-    <section className='flex flex-col'>
+    <section className='flex flex-col justify-center'>
     <NavBar/>
     <section className='flex'>
         <Outlet/>
