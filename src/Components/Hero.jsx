@@ -13,12 +13,12 @@ function Hero() {
 
   return (
     <>
-    <div className='flex flex-col'>
+    <div className='flex flex-col md:mx-60'>
     
           
       {/* Portada */}
 
-      <section className='relative'>
+      <section className='relative md:mx-60'>
        
        <section className='absolute z-1 flex flex-col ml-4 mt-6 p-2'>
           <span className='text-white/80 text-[18px] inter-100 '>Taylor Alisson Swift</span>
@@ -29,7 +29,7 @@ function Hero() {
           
           <div className='flex items-center gap-1 bg-[#4d4d4d71] rounded-md py-[6px] pl-2 pr-[6px] w-fit '>
           <span className='text-white/70 text-[12px] inter-200'> <Link to="/albums">{textos.stream}</Link></span>
-          <img src={LinkImg} alt="" className='h-2' />
+          <img src={LinkImg} alt="" className='h-2'  />
           </div>
           <span className='text-white/30 text-[8px] pl-1 pt-[3px]'>{textos.stream_description}</span>
 
@@ -40,7 +40,7 @@ function Hero() {
           <span className='text-white/70 text-[12px] inter-100'>#1 Canada Spotify</span>
           <span className='text-white/70 text-[12px] inter-100'>#2 Apple Music</span>
         </section>
-        <img src={Hero_Swift} alt="" className="brightness-60 " />
+        <img src={Hero_Swift} alt="" className="brightness-60  " />
       </section>
 
        {/* Slider */}
@@ -65,7 +65,7 @@ function Hero() {
         </div>
       </section>
 
-       {/* Portada */}
+       {/* midnights */}
 
 
       <section className='mt-16 text-white flex flex-col items-center'>
@@ -84,7 +84,7 @@ function Hero() {
         </div>
       </section>
 
-      {/* Portada */}
+      {/* newsletter */}
 
 
       <section className='text-center text-white/80 mt-28'>
@@ -92,6 +92,7 @@ function Hero() {
       <h1 className='text-sm '>Suscribe to our Newsletter!</h1>
       
       <span className='text-white/40 text-[10px] '>and find out about discounts, launches and events</span>
+
 
       </section>
 
