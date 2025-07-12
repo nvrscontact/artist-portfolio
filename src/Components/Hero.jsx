@@ -13,12 +13,12 @@ function Hero() {
 
   return (
     <>
-    <div className='flex flex-col md:mx-60'>
+    <div className='flex flex-col '>
     
           
       {/* Portada */}
 
-      <section className='relative md:mx-60'>
+      <section className='relative '>
        
        <section className='absolute z-1 flex flex-col ml-4 mt-6 p-2'>
           <span className='text-white/80 text-[18px] inter-100 '>Taylor Alisson Swift</span>
