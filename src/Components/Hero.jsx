@@ -13,41 +13,43 @@ function Hero() {
 
   return (
     <>
-    <div className='flex flex-col '>
+    <div className='flex flex-col w-full'>
     
           
       {/* Portada */}
 
-      <section className='relative '>
+      <section className='relative lg:mx-30 lg:px-6 '>
        
        <section className='absolute z-1 flex flex-col ml-4 mt-6 p-2'>
-          <span className='text-white/80 text-[18px] inter-100 '>Taylor Alisson Swift</span>
-          <span className='text-white/60 text-[10px] inter-200'>Pop, ElectroPop, Country</span>
+          <span className='text-white/80 text-[18px] lg:text-3xl inter-100 '>Taylor Alisson Swift</span>
+          <span className='text-white/60 text-[10px] lg:text-sm inter-200'>Pop, ElectroPop, Country</span>
         </section>
         
-        <section className='absolute z-1 bottom-6 left-6 flex flex-col '>
+        <section className='absolute z-1 bottom-6 left-6 flex flex-col lg:left-16 lg:bottom-8 '>
           
           <div className='flex items-center gap-1 bg-[#4d4d4d71] rounded-md py-[6px] pl-2 pr-[6px] w-fit '>
-          <span className='text-white/70 text-[12px] inter-200'> <Link to="/albums">{textos.stream}</Link></span>
+          <span className='text-white/70 text-[12px] lg:text-sm inter-200'> <Link to="/albums">{textos.stream}</Link></span>
           <img src={LinkImg} alt="" className='h-2'  />
           </div>
-          <span className='text-white/30 text-[8px] pl-1 pt-[3px]'>{textos.stream_description}</span>
+          <span className='text-white/30 text-[8px] lg:text-[10px] pl-1 pt-[3px]'>{textos.stream_description}</span>
 
         </section>
 
-        <section className='absolute z-1 flex flex-col bottom-6 right-6 text-end'>
-          <span className='text-start text-white/70 text-[14px] inter-200'>#1 USA on Spotify</span>
-          <span className='text-white/70 text-[12px] inter-100'>#1 Canada Spotify</span>
-          <span className='text-white/70 text-[12px] inter-100'>#2 Apple Music</span>
-        </section>
+         <section className='absolute z-1 flex flex-col bottom-6 right-6 text-end lg:bottom-8 lg:right-16'>
+          <span className='text-start text-white/70 text-[14px] lg:text-[18px] inter-200'>#1 USA on Spotify</span>
+          <span className='text-white/70 text-[12px] lg:text-[16px] inter-100'>#1 Canada Spotify</span>
+          <span className='text-white/70 text-[12px] lg:text-[14px] inter-100'>#2 Apple Music</span>
+        </section> 
         <img src={Hero_Swift} alt="" className="brightness-60  " />
       </section>
 
        {/* Slider */}
 
 
-      <section className="overflow-hidden w-[100vw] ">
-        <div className="flex carousel-track hover:[animation-play-state:paused] ">
+       <section className="lg:mx-30 ">
+        <div className='relative overflow-hidden w-full'>
+
+        <div className="flex w-max carousel-track">
           
           <div className="flex shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200">
             <div>#Tour2025.</div>
@@ -63,7 +65,8 @@ function Hero() {
           </div>
 
         </div>
-      </section>
+        </div>
+      </section> 
 
        {/* midnights */}
 
@@ -84,17 +87,7 @@ function Hero() {
         </div>
       </section>
 
-      {/* newsletter */}
 
-
-      <section className='text-center text-white/80 mt-28'>
-
-      <h1 className='text-sm '>Suscribe to our Newsletter!</h1>
-      
-      <span className='text-white/40 text-[10px] '>and find out about discounts, launches and events</span>
-
-
-      </section>
 
     </div>
     </>

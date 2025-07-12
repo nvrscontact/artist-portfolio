@@ -9,7 +9,7 @@ function Footer() {
   
   return (
     <>
-    <div className='bg-black/50 text-white/60 p-6 mt-20'>
+    <div className='bg-black/50 text-white/60 p-6 mt-20 lg:mx-30'>
 
       <li className='flex gap-4 [&>*>*]:h-4 '>
           <a href="https://facebook.com"><img src="/images/youtube.svg" alt="" /></a>

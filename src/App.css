@@ -19,6 +19,8 @@
 
 
    .carousel-track {
+    display:flex;
+    width:max-content;
       animation: scroll-left 15s linear infinite;
       animation-timing-function: linear;
     }
