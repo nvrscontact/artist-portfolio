@@ -18,8 +18,7 @@ function Hero() {
           
       {/* Portada */}
 
-      <section className='relative lg:mx-30 lg:px-6 '>
-       
+      <section className='relative lg:mx-30 lg:px-6 xl:mx-96'>
        <section className='absolute z-1 flex flex-col ml-4 mt-6 p-2'>
           <span className='text-white/80 text-[18px] lg:text-3xl inter-100 '>Taylor Alisson Swift</span>
           <span className='text-white/60 text-[10px] lg:text-sm inter-200'>Pop, ElectroPop, Country</span>
@@ -41,25 +40,41 @@ function Hero() {
           <span className='text-white/70 text-[12px] lg:text-[14px] inter-100'>#2 Apple Music</span>
         </section> 
         <img src={Hero_Swift} alt="" className="brightness-60  " />
+
       </section>
 
        {/* Slider */}
 
 
-       <section className="lg:mx-30 ">
+       <section className="lg:mx-30 xl:mx-96 ">
         <div className='relative overflow-hidden w-full'>
 
         <div className="flex w-max carousel-track">
           
-          <div className="flex shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200">
+          <div className="shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200 flex lg:text-sm ">
             <div>#Tour2025.</div>
             <div><span className='text-[#74b9ca]'>Midnights</span> {textos.album_available}! </div>
             <div>{textos.runs_out}</div>
             <div>#Tour2026</div>
           </div>
-          <div className="flex shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200">
+        
+          <div className="shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200 flex lg:text-sm">
             <div>#Tour2025.</div>
-            <div>Midnights {textos.album_available}! </div>
+            <div><span className='text-[#74b9ca]'>Midnights</span> {textos.album_available}! </div>
+            <div>{textos.runs_out}</div>
+            <div>#Tour2026</div>
+          </div>
+
+         <div className="shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200 hidden lg:flex lg:text-sm">
+            <div>#Tour2025.</div>
+            <div><span className='text-[#74b9ca]'>Midnights</span> {textos.album_available}! </div>
+            <div>{textos.runs_out}</div>
+            <div>#Tour2026</div>
+          </div>
+
+         <div className="shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200 hidden lg:flex lg:text-sm">
+            <div>#Tour2025.</div>
+            <div><span className='text-[#74b9ca]'>Midnights</span> {textos.album_available}! </div>
             <div>{textos.runs_out}</div>
             <div>#Tour2026</div>
           </div>

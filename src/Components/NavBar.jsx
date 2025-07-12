@@ -24,11 +24,11 @@ function NavBar() {
   return (
     <>
 
-    <section className='bg-black/50 text-white relative z-2 lg:mx-30'>
+    <section className='bg-black/50 text-white relative z-2 lg:mx-30 xl:mx-96'>
       <div className='flex justify-between mx-4 my-3 items-center'>
         <button onClick={toggleMenu}><img src={Hamburger_Menu} alt="" className='h-6' /></button>
         <div ref={menuRef} className='hidden absolute top-12 '>
-                  <li className='flex flex-col text-white/70 text-[12px] md:text-sm gap-[1px] [&>*]:p-[9px] inter-200 backdrop-blur-xl  '>
+                  <li className='flex flex-col text-white/70 text-[12px] gap-[1px] [&>*]:p-[9px] inter-200 backdrop-blur-xl lg:text-sm  '>
                   <span className=' bg-black/70' onClick={closeMenu}><Link to='/aboutme'>About Me</Link> </span>
                   <span className=' bg-black/70' onClick={closeMenu}><Link to='/store'>Store</Link> </span>
                   <span className=' bg-black/70' onClick={closeMenu}><Link to='/albums'>Albums</Link> </span>

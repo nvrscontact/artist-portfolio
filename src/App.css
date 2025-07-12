@@ -21,8 +21,14 @@
    .carousel-track {
     display:flex;
     width:max-content;
-      animation: scroll-left 15s linear infinite;
-      animation-timing-function: linear;
+    animation: scroll-left 15s linear infinite;
+    animation-timing-function: linear;
+    
+    }
+    @media screen and (min-width:1400px){
+      .carousel-track{
+        animation-duration:35s;
+      }
     }
 
     @keyframes scroll-left {
