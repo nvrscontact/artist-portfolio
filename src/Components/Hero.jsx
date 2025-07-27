@@ -99,8 +99,8 @@ function Hero() {
         <div className='flex flex-col items-center gap-1 text-[12px] '>  
           <p className='text-[10px] my-2 text-white/70 w-52 text-center inter-200'>{textos.new_album_description} </p>
           <section className='flex gap-2 inter-400 '>
-            <span className='bg-white/60 text-black py-[6px] px-3 rounded-md text-[11px] flex items-center gap-1'>Buy Album</span>
-            <span className='bg-white/60 text-black py-[6px] px-3 rounded-md text-[11px]  '>Merch</span>
+            <span className='bg-white/20 text-white py-[6px] px-5 rounded-md text-[14px]'>Merch</span>
+            <span className='bg-white/20 text-white py-[6px] px-5 rounded-md text-[14px]'>Buy Album</span>
           </section>
         </div>
 

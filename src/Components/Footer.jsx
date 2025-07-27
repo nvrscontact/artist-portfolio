@@ -19,12 +19,12 @@ function Footer() {
           <a href="https://facebook.com"><img src="/images/x.svg" alt="" /></a>
       </li>
     
-      <section className='flex my-6 gap-7 border-y py-6 border-white/10 inter-200'>
+      <section className='flex my-6 gap-9 border-y py-6 border-white/10 inter-200'>
 
-        <div className='flex flex-col gap-6 [&>*]:gap-2 lg:[&>*>*]:text-sm '>
+        <div className='flex flex-col gap-9 [&>*]:gap-2 lg:[&>*>*]:text-sm '>
 
           <section className='flex flex-col text-[11px] '>
-            <h2 className=' text-white/80 text-[15px] '>Artist</h2>
+            <h2 className=' text-white/70 text-[15px] '>Artist</h2>
             <span className=''>{textos.contact}</span>
             <span className=''>{textos.refunds}</span>
                         <span className=''>{textos.store}</span>
@@ -32,7 +32,7 @@ function Footer() {
           </section>
 
           <section className='flex flex-col text-[11px]'>
-            <h2 className=' text-white/80 text-[15px] '>Information</h2>
+            <h2 className=' text-white/70 text-[15px] '>Information</h2>
             <span className=''>{textos.legal}</span>
             <span className=''>{textos.tour}</span>
             <span className=''>{textos.accesibility}</span>
@@ -41,7 +41,7 @@ function Footer() {
         </div>
 
         <div className='flex flex-col text-[11px] gap-2 lg:[&>*]:text-sm'>
-          <h2 className=' text-white/80 text-[15px] '>Legal</h2>
+          <h2 className=' text-white/70 text-[15px] '>Legal</h2>
           <span className=''>{textos.terms}</span>
           <span className=''>{textos.cookie}</span>
           <span className=''>{textos.privacy}</span>
@@ -49,7 +49,7 @@ function Footer() {
 
       </section>
 
-      <section className='flex flex-col inter-100 lg:[&>*]:text-[10px] '>
+      <section className='flex flex-col inter-200 lg:[&>*]:text-[10px] '>
       <p className='text-[8px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi qui unde ea placeat, voluptatum amet recusandae voluptate tempore doloribus ipsam optio, minima iste repellat ratione. Culpa, provident tempora? Excepturi!</p>
       <span className='text-[8px]'>{textos.accesibility_problems}</span>
       <span className='text-[8px] mt-4'>© 2025 Taylor Swift, LLC. <br />{textos.rights_reserved}</span>  

@@ -27,21 +27,21 @@ function NavBar() {
         
         <button onClick={toggleMenu}><img src={Hamburger_Menu} alt="" className='h-6' /></button>
         <div ref={menuRef} className='hidden absolute top-13 left-0 '>
-            <section className='flex flex-col justify-between pt-5 pb-[2px] bg-black/60 backdrop-blur-sm text-white/70 inter-200 w-80 h-72 rounded-br-xl '>
+            <section className='px-4 flex flex-col justify-between pt-5 pb-3 bg-black/60 backdrop-blur-xl text-white/70 inter-200 w-80 h-80 rounded-br-xl '>
 
-              <li className='flex flex-col gap-5 mx-4 text-[14px] lg:text-sm  '>
+              <li className='flex flex-col gap-5 text-[14px] lg:text-sm  '>
                 <span className='border-b border-white/20 pb-3' onClick={closeMenu}><Link to='/store'>Store</Link> </span>
                 <span className='border-b border-white/20 pb-3 ' onClick={closeMenu}><Link to='/albums'>Albums</Link> </span>
                 <span className='border-b border-white/20 pb-3' onClick={closeMenu}><Link to='/tour'>Support</Link> </span>
                 <span className='border-b border-white/20 pb-3 ' onClick={closeMenu}><Link to='/'>Home</Link> </span>
               </li>
 
-              <section className='flex flex-col items-center gap-1 text-[14px] '>
+              <section className='flex flex-col gap-2 text-[14px] '>
                 <div className='flex gap-2'>
-                <button className=' bg-white/10 py-2 px-8 '>Register</button>
-                <button className=' bg-white/10 py-2 px-8 '>Login</button>
+                <button className=' bg-white/10 py-2 px-8 flex-1'>Register</button>
+                <button className=' bg-white/10 py-2 px-8 flex-1'>Login</button>
                 </div>
-                <span className='text-[10px] text-white/30 '>More Information</span>
+                <span className='text-[10px] text-white/30 '>Register for more information</span>
               </section>
 
             </section>

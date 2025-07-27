@@ -16,7 +16,8 @@ function Albums() {
     const images = [
         { id: '1', 
           title:'Red', 
-          year:'2011',
+          year:'June 2011',
+          type:'Deluxe Version',
           src: Red_Album,
           links: {
             spotify:'https://open.spotify.com/intl-es/album/1EoDsNmgTLtmwe1BDAVxV5',
@@ -26,7 +27,8 @@ function Albums() {
         },
         { id: '2', 
           title:'Style', 
-          year:'2013',
+          year:'May 2013',
+          type:'Album',
           src: Style_Album,
           links: {
             spotify:'https://open.spotify.com/intl-es/album/1EoDsNmgTLtmwe1BDAVxV5',
@@ -36,7 +38,8 @@ function Albums() {
         },
         { id: '3', 
           title:'Midnights', 
-          year:'2023',
+          year:'February 2023',
+          type:'New Album',
           src: midnightsAlbum,
           links: {
             spotify:'https://open.spotify.com/intl-es/album/1EoDsNmgTLtmwe1BDAVxV5',
@@ -60,7 +63,7 @@ function Albums() {
             <div className='text-white flex flex-col items-center inter-200'>
                 <section className='flex flex-col mb-2 items-center'>
                     <span className='text-[14px] ' key={img.id}>{img.title} </span>
-                    <span className='text-white/50 text-[10px] '>{img.year}</span>
+                    <span className='text-white/50 text-[10px] '>{img.type}</span>
                 </section>
                 <img 
                 key={img.id}
@@ -69,6 +72,8 @@ function Albums() {
                 onClick={() => handleClick(img)}
                 className='h-32 w-32'
                 />
+                        <span className='text-white/70 text-[10px] w-full text-center inter-200 bg-black/40 py-1'>{img.year} </span>
+
             </div>
         ))}
     </div>
