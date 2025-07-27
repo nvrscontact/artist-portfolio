@@ -27,7 +27,7 @@ function NavBar() {
         
         <button onClick={toggleMenu}><img src={Hamburger_Menu} alt="" className='h-6' /></button>
         <div ref={menuRef} className='hidden absolute top-13 left-0 '>
-            <section className='flex flex-col justify-between py-4 bg-black/40 backdrop-blur-xl text-white/70 inter-200 w-56 h-80'>
+            <section className='flex flex-col justify-between pt-5 pb-2 bg-black/40 backdrop-blur-xl text-white/70 inter-200 w-56 h-80 rounded-br-xl '>
 
               <li className='flex flex-col gap-5 mx-4 text-[14px] lg:text-sm  '>
                 <span className='border-b border-white/20 pb-3' onClick={closeMenu}><Link to='/store'>Store</Link> </span>
