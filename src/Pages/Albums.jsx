@@ -54,7 +54,7 @@ function Albums() {
 
   return (
     <>
-    <div className='mt-10 mb-20 grid grid-cols-3 gap-4 mx-auto'>
+    <div className='mt-10 mb-20 grid grid-cols-2 gap-8 mx-auto'>
 
         {images.map((img) => (
             <div className='text-white flex flex-col items-center inter-200'>
@@ -67,7 +67,7 @@ function Albums() {
                 src={img.src}
                 alt={img.title}
                 onClick={() => handleClick(img)}
-                className='h-24 w-24'
+                className='h-32 w-32'
                 />
             </div>
         ))}

@@ -27,7 +27,7 @@ function NavBar() {
         
         <button onClick={toggleMenu}><img src={Hamburger_Menu} alt="" className='h-6' /></button>
         <div ref={menuRef} className='hidden absolute top-13 left-0 '>
-            <section className='flex flex-col justify-between pt-5 pb-2 bg-black/40 backdrop-blur-xl text-white/70 inter-200 w-56 h-80 rounded-br-xl '>
+            <section className='flex flex-col justify-between pt-5 pb-2 bg-black/60 backdrop-blur-xs text-white/70 inter-200 w-70 h-80 rounded-br-xl '>
 
               <li className='flex flex-col gap-5 mx-4 text-[14px] lg:text-sm  '>
                 <span className='border-b border-white/20 pb-3' onClick={closeMenu}><Link to='/store'>Store</Link> </span>
@@ -36,12 +36,12 @@ function NavBar() {
                 <span className='border-b border-white/20 pb-3 ' onClick={closeMenu}><Link to='/'>Home</Link> </span>
               </li>
 
-              <section className='flex flex-col items-center gap-2 text-[14px] '>
+              <section className='flex flex-col items-center gap-1 text-[14px] '>
                 <div className='flex gap-2'>
-                <button className=' bg-white/10 py-2 px-6 '>Register</button>
-                <button className=' bg-white/10 py-2 px-6 '>Login</button>
+                <button className=' bg-white/10 py-2 px-8 '>Register</button>
+                <button className=' bg-white/10 py-2 px-8 '>Login</button>
                 </div>
-                <span className='text-[10px] text-white/50 '>More Information</span>
+                <span className='text-[10px] text-white/30 '>More Information</span>
               </section>
 
             </section>
