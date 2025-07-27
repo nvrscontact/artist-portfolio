@@ -38,8 +38,8 @@ const LanguageSelector = () => {
     return (
     <div>
 
-        <button onClick={alternarMenu} className='flex items-center gap-2'>
-            <span className='text-[11px] lg:text-sm inter-200 text-white/70'>{idiomaActual.nombre}</span> 
+        <button onClick={alternarMenu} className='flex items-center gap-3'>
+            <span className='text-[12px] lg:text-sm inter-200 text-white/70'>{idiomaActual.nombre}</span> 
             <img src={idiomaActual.bandera} alt='' className='h-4 lg:h-5' />
         </button>
 

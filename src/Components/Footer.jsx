@@ -9,7 +9,7 @@ function Footer() {
   
   return (
     <>
-    <div className='bg-black/50 text-white/60 p-6 mt-20 lg:mx-30 xl:mx-96'>
+    <div className='bg-black/50 text-white/60 p-6 lg:mx-30 xl:mx-96'>
 
       <li className='flex gap-4 [&>*>*]:h-4 lg:[&>*>*]:h-5 '>
           <a href="https://facebook.com"><img src="/images/youtube.svg" alt="" /></a>
@@ -21,26 +21,30 @@ function Footer() {
     
       <section className='flex my-6 gap-7 border-y py-6 border-white/10 inter-200'>
 
-        <div className='flex flex-col gap-6 [&>*>*]:text-[11px] [&>*]:gap-2 lg:[&>*>*]:text-sm '>
+        <div className='flex flex-col gap-6 [&>*]:gap-2 lg:[&>*>*]:text-sm '>
 
-          <section className='flex flex-col'>
+          <section className='flex flex-col text-[11px] '>
+            <h2 className=' text-white/80 text-[15px] '>Artist</h2>
             <span className=''>{textos.contact}</span>
             <span className=''>{textos.refunds}</span>
+                        <span className=''>{textos.store}</span>
             <span className=''>{textos.legal}</span>
           </section>
 
-          <section className='flex flex-col'>
-            <span className=''>{textos.store}</span>
+          <section className='flex flex-col text-[11px]'>
+            <h2 className=' text-white/80 text-[15px] '>Information</h2>
+            <span className=''>{textos.legal}</span>
             <span className=''>{textos.tour}</span>
             <span className=''>{textos.accesibility}</span>
           </section>
 
         </div>
 
-        <div className='flex flex-col [&>*]:text-[11px] gap-2 lg:[&>*]:text-sm'>
-          <span className='text-sm'>{textos.terms}</span>
-          <span className='text-sm'>{textos.cookie}</span>
-          <span className='text-sm'>{textos.privacy}</span>
+        <div className='flex flex-col text-[11px] gap-2 lg:[&>*]:text-sm'>
+          <h2 className=' text-white/80 text-[15px] '>Legal</h2>
+          <span className=''>{textos.terms}</span>
+          <span className=''>{textos.cookie}</span>
+          <span className=''>{textos.privacy}</span>
         </div>
 
       </section>

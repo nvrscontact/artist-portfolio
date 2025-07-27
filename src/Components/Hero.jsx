@@ -4,7 +4,7 @@ import {LanguageContext} from '../contexts/languages/context/LanguageContext';
 import Hero_Swift from '../assets/hero_swift.jpg'
 import {Link} from 'react-router-dom'
 
-import Midnights_Album from '../assets/midnights_album.jpg'
+import midnightsAlbum from '../assets/midnightsAlbum.jpg'
 import LinkImg from '../assets/arrow_link.svg'
 
 
@@ -20,17 +20,17 @@ function Hero() {
 
       <section className='relative lg:mx-30 lg:px-6 xl:mx-96'>
        <section className='absolute z-1 flex flex-col ml-4 mt-6 p-2'>
-          <span className='text-white/80 text-[18px] lg:text-3xl inter-100 '>Taylor Alisson Swift</span>
-          <span className='text-white/60 text-[10px] lg:text-sm inter-200'>Pop, ElectroPop, Country</span>
+          <span className='text-white/80 text-[20px] lg:text-3xl inter-100 '>Taylor Alisson Swift</span>
+          <span className='text-white/60 text-[12px] lg:text-sm inter-200'>Pop, ElectroPop, Country</span>
         </section>
         
         <section className='absolute z-1 bottom-6 left-6 flex flex-col lg:left-16 lg:bottom-8 '>
           
-          <div className='flex items-center gap-1 bg-[#4d4d4d71] rounded-md py-[6px] pl-2 pr-[6px] w-fit '>
-          <span className='text-white/70 text-[12px] lg:text-sm inter-200'> <Link to="/albums">{textos.stream}</Link></span>
-          <img src={LinkImg} alt="" className='h-2'  />
+          <div className='flex items-center gap-1 bg-[#5050508c] rounded-md py-2 pl-3 pr-[6px] w-fit '>
+            <span className='text-white/70 text-[12px] lg:text-sm inter-200'> <Link to="/albums">{textos.stream}</Link></span>
+            <img src={LinkImg} alt="" className='h-[10px]'  />
           </div>
-          <span className='text-white/30 text-[8px] lg:text-[10px] pl-1 pt-[3px]'>{textos.stream_description}</span>
+          <span className='text-white/40 text-[9px] lg:text-[10px] pl-1 pt-[3px]'>{textos.stream_description}</span>
 
         </section>
 
@@ -49,30 +49,30 @@ function Hero() {
        <section className="lg:mx-30 xl:mx-96 ">
         <div className='relative overflow-hidden w-full'>
 
-        <div className="flex w-max carousel-track">
+        <div className="flex w-max carousel-track bg-black/60">
           
-          <div className="shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200 flex lg:text-sm ">
+          <div className="shrink-0 space-x-10 p-2 px-4 text-[12px] text-white/80 inter-200 flex lg:text-sm ">
             <div>#Tour2025.</div>
             <div><span className='text-[#74b9ca]'>Midnights</span> {textos.album_available}! </div>
             <div>{textos.runs_out}</div>
             <div>#Tour2026</div>
           </div>
         
-          <div className="shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200 flex lg:text-sm">
+          <div className="shrink-0 space-x-10 p-2 px-4 text-[12px]  text-white/80 inter-200 flex lg:text-sm">
             <div>#Tour2025.</div>
             <div><span className='text-[#74b9ca]'>Midnights</span> {textos.album_available}! </div>
             <div>{textos.runs_out}</div>
             <div>#Tour2026</div>
           </div>
 
-         <div className="shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200 hidden lg:flex lg:text-sm">
+         <div className="shrink-0 space-x-10 p-2 px-4 text-[12px]  text-white/80 inter-200 hidden lg:flex lg:text-sm">
             <div>#Tour2025.</div>
             <div><span className='text-[#74b9ca]'>Midnights</span> {textos.album_available}! </div>
             <div>{textos.runs_out}</div>
             <div>#Tour2026</div>
           </div>
 
-         <div className="shrink-0 space-x-10 p-2 px-4 text-[12px] bg-black/50 text-white/80 inter-200 hidden lg:flex lg:text-sm">
+         <div className="shrink-0 space-x-10 p-2 px-4 text-[12px]  text-white/80 inter-200 hidden lg:flex lg:text-sm">
             <div>#Tour2025.</div>
             <div><span className='text-[#74b9ca]'>Midnights</span> {textos.album_available}! </div>
             <div>{textos.runs_out}</div>
@@ -91,7 +91,7 @@ function Hero() {
           <h1 className='flex text-white/80'><span className='text-[20px] inter-100'>Midnights</span><span className='text-sm '>®</span></h1>
           <span className='bg-black/60 py-1 px-2 rounded-md text-[11px] inter-200'>{textos.new_album}</span>
         </div>
-        <img src={Midnights_Album} alt="" className='h-52 w-52 mb-1'/>
+        <img src={midnightsAlbum} alt="" className='h-52 w-52 mb-1'/>
         <div className='flex flex-col items-center gap-1 text-[12px] '>
         <p className='text-[10px] my-2 text-white/60 w-52 text-center inter-200'>{textos.new_album_description} </p>
           <section className='flex gap-1 inter-200'>

@@ -1,12 +1,10 @@
 import {Link} from 'react-router-dom'
-import LanguageSelector from "../contexts/languages/components/LanguageSelector";
+import React, {useRef} from 'react'
 
+import LanguageSelector from "../contexts/languages/components/LanguageSelector";
 
 import Hamburger_Menu from '../assets/hamburger_menu.svg'
 
-
-
-import React, {useRef} from 'react'
 
 function NavBar() {
 
@@ -24,8 +22,8 @@ function NavBar() {
   return (
     <>
 
-    <section className='bg-black/50 text-white relative z-2 lg:mx-30 xl:mx-96'>
-      <div className='flex justify-between mx-4 my-3 items-center'>
+    <section className='bg-black/60 text-white relative z-2 lg:mx-30 xl:mx-96'>
+      <div className='flex justify-between mx-4 my-[14px] items-center'>
         <button onClick={toggleMenu}><img src={Hamburger_Menu} alt="" className='h-6' /></button>
         <div ref={menuRef} className='hidden absolute top-12 '>
                   <li className='flex flex-col text-white/70 text-[12px] gap-[1px] [&>*]:p-[9px] inter-200 backdrop-blur-xl lg:text-sm  '>
