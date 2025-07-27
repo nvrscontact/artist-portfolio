@@ -17,7 +17,7 @@ function Albums() {
         { id: '1', 
           title:'Red', 
           year:'June 2011',
-          type:'Deluxe Version',
+          type:'Album',
           src: Red_Album,
           links: {
             spotify:'https://open.spotify.com/intl-es/album/1EoDsNmgTLtmwe1BDAVxV5',
@@ -28,7 +28,7 @@ function Albums() {
         { id: '2', 
           title:'Style', 
           year:'May 2013',
-          type:'Album',
+          type:'Deluxe Version',
           src: Style_Album,
           links: {
             spotify:'https://open.spotify.com/intl-es/album/1EoDsNmgTLtmwe1BDAVxV5',
@@ -62,17 +62,17 @@ function Albums() {
         {images.map((img) => (
             <div className='text-white flex flex-col items-center inter-200'>
                 <section className='flex flex-col mb-2 items-center'>
-                    <span className='text-[14px] ' key={img.id}>{img.title} </span>
-                    <span className='text-white/50 text-[10px] '>{img.type}</span>
+                    <span className='text-[16px] ' key={img.id}>{img.title} </span>
+                    <span className='text-white/50 text-[11px] '>{img.type}</span>
                 </section>
                 <img 
-                key={img.id}
-                src={img.src}
-                alt={img.title}
-                onClick={() => handleClick(img)}
-                className='h-32 w-32'
+                  key={img.id}
+                  src={img.src}
+                  alt={img.title}
+                  onClick={() => handleClick(img)}
+                  className='h-32 w-32'
                 />
-                        <span className='text-white/70 text-[10px] w-full text-center inter-200 bg-black/40 py-1'>{img.year} </span>
+                <span className='text-white/70 text-[10px] w-32 text-center inter-200 bg-black/40 py-1'>{img.year} </span>
 
             </div>
         ))}

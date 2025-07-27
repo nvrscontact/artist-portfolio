@@ -9,7 +9,7 @@ function Footer() {
   
   return (
     <>
-    <div className='bg-black/50 text-white/60 p-6 lg:mx-30 xl:mx-96'>
+    <footer className='bg-black/50 text-white/60 p-6 lg:mx-30 xl:mx-96'>
 
       <li className='flex gap-4 [&>*>*]:h-4 lg:[&>*>*]:h-5 '>
           <a href="https://facebook.com"><img src="/images/youtube.svg" alt="" /></a>
@@ -45,6 +45,7 @@ function Footer() {
           <span className=''>{textos.terms}</span>
           <span className=''>{textos.cookie}</span>
           <span className=''>{textos.privacy}</span>
+
         </div>
 
       </section>
@@ -55,7 +56,7 @@ function Footer() {
       <span className='text-[8px] mt-4'>© 2025 Taylor Swift, LLC. <br />{textos.rights_reserved}</span>  
       </section>
 
-    </div>
+    </footer>
 
     </>
   )

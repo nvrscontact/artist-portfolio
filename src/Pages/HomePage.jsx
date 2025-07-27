@@ -1,11 +1,11 @@
 import React from 'react'
-import Hero from '../Components/Hero'
+import Presentation from '../Components/Presentation'
 
 
 function HomePage() {
   return (
     <>
-    <Hero/>
+    <Presentation/>
     </>
   )
 }

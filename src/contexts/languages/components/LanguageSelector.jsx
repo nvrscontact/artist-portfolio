@@ -36,7 +36,7 @@ const LanguageSelector = () => {
     }
 
     return (
-    <div>
+    <div className='relative'>
 
         <button onClick={alternarMenu} className='flex items-center gap-3'>
             <span className='text-[12px] lg:text-sm inter-200 text-white/70'>{idiomaActual.nombre}</span> 
@@ -44,24 +44,22 @@ const LanguageSelector = () => {
         </button>
 
 
-        <section className='relative'>
          {menuAbierto && (
 
-            <div className='absolute top-4 right-0 z-2 flex flex-col gap-[1px]'> {idiomasDisponibles.map((idioma) => (
+            <div className='absolute right-[-14px] z-2 mt-[15px] h-64 bg-black/60 backdrop-blur-xl inter-200 text-end'  > {idiomasDisponibles.map((idioma) => (
 
                 
-                <div key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='bg-black/60'>
+                <div key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='w-32 my-5 mx-3 flex flex-cols justify-end '>
 
-                    <section className='flex w-20 gap-2 p-[10px] inter-200 text-white/70 lg:w-24'>
-                    <span className='text-[11px] lg:text-sm '>{idioma.nombre} </span>
-                    <img src={idioma.bandera} alt="" className='h-4' />
+                    <section className='flex gap-2 items-center text-white/70 lg:w-24 border-b border-white/10 pb-3 w-full justify-end '>
+                        <span className='text-[14px] lg:text-md '>{idioma.nombre} </span>
+                        <img src={idioma.bandera} alt="" className='h-4' />
                     </section>
 
-                </div>) )}  
+                </div>) )}
 
             </div>)}
 
-        </section>
     
 
     </div>
@@ -69,11 +67,3 @@ const LanguageSelector = () => {
 }
 
 export default LanguageSelector;
-
-     {/*  <label htmlFor="">{textos.idioma} </label>
-        <select value={idioma} onChange={(e) => setIdioma(e.target.value)}>
-            <option value="es"> es </option>
-            <option value="de">deutch</option>
-            <option value="fr">français</option>
-            <option value="en">english</option>
-        </select> */}
