@@ -17,7 +17,6 @@ function Albums() {
         { id: '1', 
           title:'Red', 
           year:'2011',
-          type:'Deluxe Version',
           src: Red_Album,
           links: {
             spotify:'https://open.spotify.com/intl-es/album/1EoDsNmgTLtmwe1BDAVxV5',
@@ -29,7 +28,6 @@ function Albums() {
           title:'Style', 
           year:'2013',
           src: Style_Album,
-          type:'Album',
           links: {
             spotify:'https://open.spotify.com/intl-es/album/1EoDsNmgTLtmwe1BDAVxV5',
             youtube:'https://music.youtube.com/watch?v=sEPXrepgujY&list=OLAK5uy_kRl6HdICkQpZF7zuHu_Yx-RDVHw-hboxo',
@@ -39,7 +37,6 @@ function Albums() {
         { id: '3', 
           title:'Midnights', 
           year:'2023',
-          type:'New Album',
           src: midnightsAlbum,
           links: {
             spotify:'https://open.spotify.com/intl-es/album/1EoDsNmgTLtmwe1BDAVxV5',
@@ -57,7 +54,7 @@ function Albums() {
 
   return (
     <>
-    <div className='mt-10 mb-20 grid grid-cols-3 gap-6 mx-auto'>
+    <div className='mt-10 mb-20 grid grid-cols-3 gap-4 mx-auto'>
 
         {images.map((img) => (
             <div className='text-white flex flex-col items-center inter-200'>
@@ -72,7 +69,6 @@ function Albums() {
                 onClick={() => handleClick(img)}
                 className='h-24 w-24'
                 />
-                <span className='mt-2 text-[9px] text-white/60 bg-black/50 py-1 w-fit px-2 '>{img.type} </span>
             </div>
         ))}
     </div>
