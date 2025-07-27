@@ -86,20 +86,24 @@ function Hero() {
        {/* midnights */}
 
 
-      <section className='mt-16 text-white flex flex-col items-center'>
+      <section className='my-16 text-white flex flex-col items-center mx-auto'>
+       
         <div className='flex flex-col items-center mb-2'>
-          <h1 className='flex text-white/80'><span className='text-[20px] inter-100'>Midnights</span><span className='text-sm '>®</span></h1>
+          <h1 className='flex text-white/80'><span className='text-[20px] inter-100'>Midnights</span><span className='text-[12px] pl-[2px] inter-100'>®</span></h1>
           <span className='bg-black/60 py-1 px-2 rounded-md text-[11px] inter-200'>{textos.new_album}</span>
         </div>
-        <img src={midnightsAlbum} alt="" className='h-52 w-52 mb-1'/>
-        <div className='flex flex-col items-center gap-1 text-[12px] '>
-        <p className='text-[10px] my-2 text-white/60 w-52 text-center inter-200'>{textos.new_album_description} </p>
-          <section className='flex gap-1 inter-200'>
-          <span className='bg-white/10 py-[6px] px-3 text-[11px] rounded-md '>Merch</span>
-          <span className='bg-white/10 py-[6px] px-2 text-[11px] rounded-md flex items-center gap-1'>Buy Album</span>
-          <span className='bg-white/10 py-[6px] px-3 text-[11px] rounded-md'>Merch</span>
+
+        <img src={midnightsAlbum} alt="" className='h-52 w-52'/>
+        <span className='text-white/70 text-[10px] w-full text-center inter-200 bg-black/60 py-1'>February 2013 </span>
+        
+        <div className='flex flex-col items-center gap-1 text-[12px] '>  
+          <p className='text-[10px] my-2 text-white/70 w-52 text-center inter-200'>{textos.new_album_description} </p>
+          <section className='flex gap-2 inter-400 '>
+            <span className='bg-white/60 text-black py-[6px] px-3 rounded-md text-[11px] flex items-center gap-1'>Buy Album</span>
+            <span className='bg-white/60 text-black py-[6px] px-3 rounded-md text-[11px]  '>Merch</span>
           </section>
         </div>
+
       </section>
 
 
