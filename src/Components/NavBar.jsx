@@ -32,7 +32,7 @@ function NavBar() {
               <ul className='flex flex-col gap-5 text-[14px] lg:text-sm  '>
                 <li className='border-b border-white/10 pb-3' onClick={closeMenu}><Link to='/store'>Store</Link> </li>
                 <li className='border-b border-white/10 pb-3 ' onClick={closeMenu}><Link to='/albums'>Albums</Link> </li>
-                <li className='border-b border-white/10 pb-3' onClick={closeMenu}><Link to='/tour'>Support</Link> </li>
+                <li className='border-b border-white/10 pb-3' onClick={closeMenu}><Link to='/support'>Support</Link> </li>
                 <li className='border-b border-white/10 pb-3 ' onClick={closeMenu}><Link to='/'>Home</Link> </li>
               </ul>
 

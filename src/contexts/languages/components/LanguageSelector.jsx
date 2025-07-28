@@ -46,7 +46,7 @@ const LanguageSelector = () => {
 
          {menuAbierto && (
 
-            <div className='absolute right-[-14px] z-2 mt-[15px] bg-black/60 backdrop-blur-xl inter-200 text-end'  > {idiomasDisponibles.map((idioma) => (
+            <div className='absolute right-[-14px] z-2 mt-[15px] bg-black/60 inter-200 text-end'  > {idiomasDisponibles.map((idioma) => (
 
                 
                 <div key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='w-28 m-[2px] pr-2 flex flex-cols justify-end bg-white/10 '>
