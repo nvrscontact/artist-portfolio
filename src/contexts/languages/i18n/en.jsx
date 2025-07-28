@@ -9,13 +9,14 @@ export default {
 
 
   new_album:'New Album',
-  new_album_description:'Lorem ipsum dolor sit amet consectetur discounts. But his pleasure at symptoms.',
+  new_album_description:'Lorem ipsum dolor sit amet consectetur discounts. But his pleasure at symptoms. and a lot of wild things you can imagine',
 
   contact: 'Contact',
   refunds:'Refunds',
   legal:'Legal',
   store:'Store',
   tour:'Tour',
+  support:'Support',
   accesibility:'Accesibility',
   terms: 'Terms and Conditions',
   cookie:'Cookie policy',

@@ -5,15 +5,18 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Layout from './Layout';
 
-import HomePage from './Pages/HomePage'
-import AboutMe from './Pages/AboutMe';
-import Hear from './Pages/Hear';
-import Albums from './Pages/Albums';
 
 import {LanguageProvider} from './contexts/languages/context/LanguageContext';
 import {GlobalContext} from './contexts/GlobalContext';
 
+
+import HomePage from './Pages/HomePage'
+import Privacy from './Pages/Privacy';
+import Hear from './Pages/Hear';
+import Albums from './Pages/Albums';
+import Support from './Pages/Support';
 import Tour from './Pages/Tour';
+import Contact from './Pages/Contact';
 import Store from './Pages/Store';
 
 
@@ -27,10 +30,12 @@ function App() {
             <Route path='/' element={<Layout/>}>
               <Route index element={<HomePage/>}/>
               <Route path='/' element={<HomePage/>} />
-              <Route path='/aboutme' element={<AboutMe/>} />
+              <Route path='/privacy' element={<Privacy/>} />
               <Route path='/hear' element={<Hear/>} />
-              <Route path='/albums' element={<Albums/>} />
               <Route path='/tour' element={<Tour/>} />
+              <Route path='/contact' element={<Contact/>} />
+              <Route path='/albums' element={<Albums/>} />
+              <Route path='/support' element={<Support/>} />
               <Route path='/store' element={<Store/>} />
             </Route>
           </Routes>

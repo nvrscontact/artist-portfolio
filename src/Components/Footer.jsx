@@ -1,6 +1,7 @@
 
 import React, {useContext} from 'react';
 import {LanguageContext} from '../contexts/languages/context/LanguageContext';
+import { Link } from 'react-router-dom';
 
 /* '../languages/context/LanguageContext' */
 
@@ -25,27 +26,26 @@ function Footer() {
 
           <section className='flex flex-col text-[11px] '>
             <h2 className=' text-white/70 text-[15px] mb-1'>Artist</h2>
-            <span className=''>{textos.contact}</span>
-            <span className=''>{textos.refunds}</span>
-                        <span className=''>{textos.store}</span>
-            <span className=''>{textos.legal}</span>
+            <Link to='/contact'>{textos.contact}</Link>
+            <Link to='/store'>{textos.refunds}</Link>
+            <Link to='/store'>{textos.store}</Link>
+            <Link to='/tour'>{textos.tour}</Link>
           </section>
 
           <section className='flex flex-col text-[11px]'>
             <h2 className=' text-white/70 text-[15px] mb-1'>Information</h2>
-            <span className=''>{textos.legal}</span>
-            <span className=''>{textos.tour}</span>
-            <span className=''>{textos.accesibility}</span>
+            <Link to='/support'>{textos.accesibility}</Link>
+            <Link to='/support'>{textos.support}</Link>
           </section>
 
         </div>
 
         <div className='flex flex-col text-[11px] gap-2 lg:[&>*]:text-sm'>
           <h2 className=' text-white/70 text-[15px] mb-1'>Legal</h2>
-          <span className=''>{textos.terms}</span>
-          <span className=''>{textos.cookie}</span>
-          <span className=''>{textos.privacy}</span>
-
+          <Link to='/privacy' >{textos.terms}</Link>
+          <Link to='/privacy'>{textos.cookie}</Link>
+          <Link to='/privacy'>{textos.privacy}</Link>
+          <Link to='/privacy'>{textos.legal}</Link>
         </div>
 
       </section>

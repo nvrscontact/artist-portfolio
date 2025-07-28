@@ -57,25 +57,33 @@ function Albums() {
 
   return (
     <>
-    <div className='mt-10 mb-20 grid grid-cols-2 mx-6 gap-y-6 '>      
+    <div className='mt-10 mb-20 flex flex-col'>      
 
-        {images.map((img) => (
+        <section className='flex flex-col items-center mb-8 inter-200  '>
+          <h1 className='text-white/70 text-3xl inter-200 text-center '>Albums</h1>
+          <span className='text-white/40 text-[12px] '>Complete Discography</span>
+        </section>
+
+        <section className='grid grid-cols-2 mx-4 gap-y-12'>
+          {images.map((img) => (
             <div className='text-white flex flex-col items-center inter-200'>
-                <section className='flex flex-col mb-2 items-center'>
-                    <span className='text-[16px] ' key={img.id}>{img.title} </span>
-                    <span className='text-white/50 text-[11px] '>{img.year}</span>
-                </section>
-                <img 
-                  key={img.id}
-                  src={img.src}
-                  alt={img.title}
-                  onClick={() => handleClick(img)}
-                  className='h-32 w-32'
-                />
-                <span className='text-white/70 text-[10px] w-32 text-center inter-200 bg-black/40 py-1 border-b-[1px] border-white/40'>{img.type} </span>
+                  <section className='flex flex-col mb-2 items-center'>
+                      <span className='text-[16px] ' key={img.id}>{img.title} </span>
+                      <span className='text-white/50 text-[11px] '>{img.year}</span>
+                  </section>
+                  <img 
+                    key={img.id}
+                    src={img.src}
+                    alt={img.title}
+                    onClick={() => handleClick(img)}
+                    className='h-32 w-32'
+                    />
+                  <span className='text-white/70 text-[10px] w-32 text-center inter-200 bg-black/40 py-1 border-b-[1px] border-white/40'>{img.type} </span>
 
-            </div>
-        ))}
+              </div>
+          ))}
+        </section>
+
     </div>
     </>
     )

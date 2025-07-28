@@ -26,7 +26,7 @@ function Hero() {
         
         <div className='absolute z-1 bottom-6 left-6 flex flex-col lg:left-16 lg:bottom-8 '>
           
-          <section className='flex items-center gap-1 bg-[#5050508c] rounded-md py-2 pl-3 pr-[6px] w-fit '>
+          <section className='flex items-center gap-1 bg-[#5050508c] py-2 pl-3 pr-[6px] w-fit '>
             <span className='text-white/70 text-[12px] lg:text-sm inter-200'> <Link to="/albums">{textos.stream}</Link></span>
             <img src={LinkImg} alt="" className='h-[10px]'  />
           </section>
@@ -85,7 +85,7 @@ function Hero() {
       <article className='my-16 text-white flex flex-col items-center mx-auto max-w-52'>
        
         <div className='flex flex-col items-center mb-2'>
-          <h1 className='flex text-white/80'><span className='text-[24px] inter-100'>Midnights</span><span className='text-[12px] pl-[2px] inter-100'>®</span></h1>
+          <h1 className='flex text-white/80'><span className='text-[24px] inter-100 ml-1'>Midnights</span><span className='text-[12px] inter-100'>®</span></h1>
           <span className='bg-black/70 py-1 px-4 text-[12px] inter-200'>{textos.new_album}</span>
         </div>
 
@@ -94,14 +94,9 @@ function Hero() {
         
         <div className='flex flex-col items-center gap-1 text-[12px] '>  
           <p className='text-[10px] my-2 text-white/50 text-center inter-200'>{textos.new_album_description} </p>
-          <section className='flex gap-2 inter-400 w-full text-center text-[12px] '>
-              <button className='flex flex-1 justify-center bg-[#5050508c] py-2 px-3 w-fit '>
-                <span className='text-white/70 text-[12px] lg:text-sm inter-200'><Link to="/albums">Buy Album</Link></span>
+              <button className='flex items-center bg-white/60 py-[6px] px-8 w-fit '>
+                <span className='text-black text-[12px] lg:text-sm inter-400'><Link to="/store">Buy Album</Link></span>
                </button>
-              <button className='flex flex-1 justify-center bg-[#5050508c] py-2 px-3 w-fit '>
-                <span className='text-white/70 text-[12px] lg:text-sm inter-200'><Link to="/albums">Buy Merch</Link></span>
-               </button>
-          </section>
         </div>
 
       </article>

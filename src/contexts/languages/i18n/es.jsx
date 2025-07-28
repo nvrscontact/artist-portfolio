@@ -17,6 +17,7 @@ export default {
   legal:'Legal',
   store:'Tienda',
   tour:'Giras',
+  support:'Soporte',
   accesibility:'Accesibilidad',
   terms: 'Términos y Condiciones',
   cookie:'Política de Cookies',
