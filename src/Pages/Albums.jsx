@@ -57,13 +57,13 @@ function Albums() {
 
   return (
     <>
-    <div className='mt-10 mb-20 grid grid-cols-2 gap-8 mx-auto'>
+    <div className='mt-10 mb-20 grid grid-cols-2 mx-6 gap-y-6 '>      
 
         {images.map((img) => (
             <div className='text-white flex flex-col items-center inter-200'>
                 <section className='flex flex-col mb-2 items-center'>
                     <span className='text-[16px] ' key={img.id}>{img.title} </span>
-                    <span className='text-white/50 text-[11px] '>{img.type}</span>
+                    <span className='text-white/50 text-[11px] '>{img.year}</span>
                 </section>
                 <img 
                   key={img.id}
@@ -72,7 +72,7 @@ function Albums() {
                   onClick={() => handleClick(img)}
                   className='h-32 w-32'
                 />
-                <span className='text-white/70 text-[10px] w-32 text-center inter-200 bg-black/40 py-1'>{img.year} </span>
+                <span className='text-white/70 text-[10px] w-32 text-center inter-200 bg-black/40 py-1 border-b-[1px] border-white/40'>{img.type} </span>
 
             </div>
         ))}

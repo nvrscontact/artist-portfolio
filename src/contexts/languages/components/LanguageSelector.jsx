@@ -46,12 +46,12 @@ const LanguageSelector = () => {
 
          {menuAbierto && (
 
-            <div className='absolute right-[-14px] z-2 mt-[15px] h-64 bg-black/60 backdrop-blur-xl inter-200 text-end'  > {idiomasDisponibles.map((idioma) => (
+            <div className='absolute right-[-14px] z-2 mt-[15px] bg-black/60 backdrop-blur-xl inter-200 text-end'  > {idiomasDisponibles.map((idioma) => (
 
                 
-                <div key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='w-32 my-5 mx-3 flex flex-cols justify-end '>
+                <div key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='w-28 my-5 mx-4 flex flex-cols justify-end '>
 
-                    <section className='flex gap-2 items-center text-white/70 lg:w-24 border-b border-white/10 pb-3 w-full justify-end '>
+                    <section className='flex gap-2 items-center text-white/70 lg:w-24 pb-3 w-full justify-end '>
                         <span className='text-[14px] lg:text-md '>{idioma.nombre} </span>
                         <img src={idioma.bandera} alt="" className='h-4' />
                     </section>
@@ -59,9 +59,6 @@ const LanguageSelector = () => {
                 </div>) )}
 
             </div>)}
-
-    
-
     </div>
 )
 }
