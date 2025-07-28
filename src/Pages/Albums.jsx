@@ -78,7 +78,7 @@ function Albums() {
                     onClick={() => handleClick(img)}
                     className='h-32 w-32'
                     />
-                  <span className='text-white/70 text-[10px] w-32 text-center inter-200 bg-black/40 py-1 border-b-[1px] border-white/40'>{img.type} </span>
+                  <span className='text-white/70 text-[10px] w-32 text-center inter-200 bg-black/60 py-1'>{img.type} </span>
 
               </div>
           ))}

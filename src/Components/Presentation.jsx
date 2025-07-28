@@ -90,7 +90,7 @@ function Hero() {
         </div>
 
         <img src={midnightsAlbum} alt="" className='h-52 w-52'/>
-        <span className='text-white/70 text-[10px] w-52 text-center inter-200 bg-black/60 border-b-[1px] border-white/40 py-[6px]'>February 2013 </span>
+        <span className='text-white/70 text-[10px] w-52 text-center inter-200 bg-black/60 py-[6px]'>February 2013 </span>
         
         <div className='flex flex-col items-center gap-1 text-[12px] '>  
           <p className='text-[10px] my-2 text-white/50 text-center inter-200'>{textos.new_album_description} </p>

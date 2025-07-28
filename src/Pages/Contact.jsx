@@ -38,7 +38,7 @@ function Contact() {
 
 
                <section className='mx-14 mt-20 text-center flex flex-col items-center inter-200  '>
-              <span className='text-white/40 text-[12px] '>Artist Trademark® United States <br /> Sarzuela Road, n° 1, 28023 Madrid</span>
+              <span className='text-white/40 text-[12px] '>Artist Trademark® United States <br /> Sarzuela Road, n° 1, 28023 Washington</span>
                 </section>
 
             </section>

@@ -37,7 +37,7 @@ function NavBar() {
               </ul>
 
               <section className='flex flex-col gap-2 text-[14px] '>
-                <div className='flex gap-2'>
+                <div className='flex gap-1'>
                   <button className=' bg-white/10 py-2 px-8 flex-1'>Register</button>
                   <button className=' bg-white/10 py-2 px-8 flex-1'>Login</button>
                 </div>

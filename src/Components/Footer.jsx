@@ -27,8 +27,8 @@ function Footer() {
           <section className='flex flex-col text-[11px] '>
             <h2 className=' text-white/70 text-[15px] mb-1'>Artist</h2>
             <Link to='/contact'>{textos.contact}</Link>
-            <Link to='/store'>{textos.refunds}</Link>
-            <Link to='/store'>{textos.store}</Link>
+            <Link to='/store#refunds'>{textos.refunds}</Link>
+            <Link to='/store#store'>{textos.store}</Link>
             <Link to='/tour'>{textos.tour}</Link>
           </section>
 
@@ -42,10 +42,10 @@ function Footer() {
 
         <div className='flex flex-col text-[11px] gap-2 lg:[&>*]:text-sm'>
           <h2 className=' text-white/70 text-[15px] mb-1'>Legal</h2>
-          <Link to='/privacy' >{textos.terms}</Link>
-          <Link to='/privacy'>{textos.cookie}</Link>
-          <Link to='/privacy'>{textos.privacy}</Link>
-          <Link to='/privacy'>{textos.legal}</Link>
+          <Link to='/privacy#terms' >{textos.terms}</Link>
+          <Link to='/privacy#cookies'>{textos.cookie}</Link>
+          <Link to='/privacy#privacy'>{textos.privacy}</Link>
+          <Link to='/privacy#legal'>{textos.legal}</Link>
         </div>
 
       </section>
