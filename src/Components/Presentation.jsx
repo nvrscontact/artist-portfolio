@@ -84,19 +84,30 @@ function Hero() {
        {/* New Album */}
       <article className='my-16 text-white flex flex-col items-center mx-auto max-w-52'>
        
-        <div className='flex flex-col items-center mb-2'>
-          <h1 className='flex text-white/80'><span className='text-[24px] inter-100 ml-1'>Midnights</span><span className='text-[12px] inter-100'>®</span></h1>
-          <span className='bg-black/70 py-1 px-4 text-[12px] inter-200'>{textos.new_album}</span>
-        </div>
+        <div className='flex flex-col items-center mb-2 space-y-1'>
+          <section className='text-center space-y-[-8px]  '>
+            <h1 className='flex text-white/80'><span className='text-[24px] inter-100 ml-1'>Midnights</span><span className='text-[12px] inter-100'>®</span></h1>
+            <span className='inter-200 text-[12px] text-white/40'>New Album</span>
+          </section>
+          <span className='bg-black/70 py-1 px-4 text-[12px] inter-200 text-white/70'>13 songs • 44 minutes</span>        
+          </div>
 
         <img src={midnightsAlbum} alt="" className='h-52 w-52'/>
         <span className='text-white/70 text-[10px] w-52 text-center inter-200 bg-black/60 py-[6px]'>February 2013 </span>
         
         <div className='flex flex-col items-center gap-1 text-[12px] '>  
           <p className='text-[10px] my-2 text-white/50 text-center inter-200'>{textos.new_album_description} </p>
-              <button className='flex items-center bg-white/60 py-[6px] px-8 w-fit '>
-                <span className='text-black text-[12px] lg:text-sm inter-400'><Link to="/store">Buy Album</Link></span>
+          <section className='flex gap-1'> 
+              <button className='flex items-center'>
+                <span className='bg-white/50 py-[10px] px-3 flex flex-1 text-[12px] text-black/80 lg:text-sm inter-400'> <Link to="/store">Tour</Link></span>
                </button>
+              <button className='flex h-10 w-32 border border-white/30 items-center'>
+                <span className='bg-white/50 flex flex-1 h-full w-full justify-center items-center text-[12px] text-black/80 lg:text-sm inter-400'> <Link to="/store">Buy Album</Link></span>
+                <span className='bg-white/30 border-l flex items-center px-2 border-white/30 h-full'>
+                <img src={LinkImg} alt="" className='h-4' />
+                </span>
+               </button>
+          </section>
         </div>
 
       </article>
