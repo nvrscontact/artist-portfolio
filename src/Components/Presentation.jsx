@@ -94,8 +94,9 @@ function Hero() {
         <img src={midnightsAlbum} alt="" className='h-52 w-52'/>
         <span className='text-white/70 text-[10px] w-52 text-center inter-200 bg-black/60 py-[6px] mb-2'>February 2013 </span>
         
-        <div className='flex flex-col items-center text-[12px] '>  
-           <p className='mt-1 mb-4 text-[10px] text-white/50 text-center inter-200'>{textos.new_album_description} </p>
+        <div className='flex flex-col items-center text-[10px] inter-200 text-white/60'>
+           <span className='text-white/50'>13 songs • 44 minutes • Pop</span>
+           <p className='mt-1 mb-4 text-[10px] text-center'>{textos.new_album_description} </p>
           <section className='flex gap-1'> 
               <button className='flex items-center'>
                 <span className='bg-white/70 py-[10px] px-4 flex flex-1 text-[12px] text-black/80 lg:text-sm inter-500'> <Link to="/store">Tour</Link></span>
@@ -119,6 +120,3 @@ function Hero() {
 }
 
 export default Hero
-
-{/*           <span className='text-[12px]  inter-200 text-white/60'>13 songs • 44 minutes • somehow</span>
- */}
