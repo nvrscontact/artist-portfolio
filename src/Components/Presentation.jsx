@@ -7,6 +7,7 @@ import Hero_Swift from '../assets/hero_swift.jpg'
 import midnightsAlbum from '../assets/midnightsAlbum.jpg'
 import LinkImg from '../assets/arrow_link.svg'
 import songWhite from '../assets/songWhite.svg'
+import ShirtMerchandising from '../assets/ShirtMerchandising.png'
 
 
 
@@ -40,7 +41,7 @@ function Hero() {
           <span className='text-white/70 text-[12px] lg:text-[16px] inter-100'>#1 Canada Spotify</span>
           <span className='text-white/70 text-[12px] lg:text-[14px] inter-100'>#2 Apple Music</span>
         </section> 
-        <img src={Hero_Swift} alt="" className="brightness-80 h-[19rem] object-cover " />
+        <img src={Hero_Swift} alt="" className="brightness-80 h-[18rem] object-cover " />
 
       </section>
 
@@ -82,7 +83,7 @@ function Hero() {
        </aside> 
 
        {/* New Album */}
-      <article className='my-16 text-white flex flex-col items-center mx-auto'>
+      <article className='mt-30 mb-40 text-white flex flex-col items-center mx-auto'>
        
         <div className='mb-2 space-y-1'>
           <section className='text-center space-y-[-8px]  '>
@@ -96,9 +97,36 @@ function Hero() {
         
         <div className='flex flex-col items-center text-[10px] inter-200 text-white/60'>
            <p className=' text-[10px] text-center max-w-56 mt-3 mb-4'>{textos.new_album_description} </p>
-     
+               
         </div>
 
+        <section className='border border-white/40 rounded-xl'>
+          <button className='bg-white/10 my-[2px] mx-[2px] rounded-[8px]  py-2 px-7 inter-200 text-[14px] text-white/70'>Buy Album</button>
+        </section>
+
+      </article>
+
+
+
+
+      {/* Merchandising */}
+      <article className='mx-auto flex flex-col items-center text-white/70 inter-200 text-center mb-40'>
+      <h1 className='text-2xl'>New Merchandising</h1>
+      <span className='text-[12px] text-white/50 mb-4 mx-12 '>T-shirt Sport - Running</span>
+      <img src={ShirtMerchandising} alt="" className='h-80' />
+      <span className='text-[12px] -mt-3 mb-2 text-white/50'>Editor's Collection</span>
+      <p className='text-[12px] text-white/50 mb-4 mx-12 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatum beatae maxime distinctio rerum ullam natus molestias dolorum eaque modi!</p>
+          <section className='space-x-2'>
+            <button className='bg-white/10 my-[2px] rounded-[8px]  py-2 px-7 inter-200 text-[14px] text-white/70'>More Info</button>
+            <button className='bg-white/30 my-[2px] rounded-[8px]  py-2 px-7 inter-200 text-[14px] text-white/70 inter-300'>Find Out</button>
+          </section>
+      </article>
+
+      {/* Newsletter */}
+      <article className='mx-5 flex flex-col items-end text-white/70 inter-200 text-center mb-40'>
+      <h1 className='text-2xl mx-auto'>Subscribe to our Newsletter</h1>
+      <p className='text-[12px] text-white/50 mt-4 mb-6 mx-2 flex flex-col gap-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatum beatae maxime distinctio rerum ullam natus molestias dolorum eaque modi! <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, vero and all that what you think is very nice of you part to say that to me, i'm so happy.</span> </p>
+      <button className='bg-white/10 mr-8 rounded-[8px] py-2 px-7 inter-200 text-[14px] text-white/70 flex w-fit'>Subscribe</button>
       </article>
 
 
@@ -109,5 +137,3 @@ function Hero() {
 }
 
 export default Hero
-
-/* <Link to="/store">Buy Album</Link> <img src={LinkImg} alt="" className='h-3' /> */

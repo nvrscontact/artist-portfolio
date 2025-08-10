@@ -46,10 +46,10 @@ const LanguageSelector = () => {
 
          {menuAbierto && (
 
-            <div className='absolute right-0 top-12 z-2 bg-black/60 backdrop-blur-xl w-full inter-200 text-end'  > {idiomasDisponibles.map((idioma) => (  
+            <div className='absolute right-0 top-12 z-2 bg-black/60 backdrop-blur-xl w-full inter-200 pr-2'  > {idiomasDisponibles.map((idioma) => (  
                 <section key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='flex flex-cols justify-end '>
 
-                    <ul className='flex gap-2 items-center text-white/60 lg:w-24 py-4 pr-2 w-full justify-end border-b border-white/10'>
+                    <ul className='flex gap-2 items-center text-white/60  py-4 pr-2 w-full justify-end border-b border-white/10'>
                         <span className='text-[14px] lg:text-md '>{idioma.nombre} </span>
                         <img src={idioma.bandera} alt="" className='h-4' />
                     </ul>
