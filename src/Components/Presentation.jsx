@@ -41,7 +41,7 @@ function Hero() {
           <span className='text-white/70 text-[12px] lg:text-[16px] inter-100'>#1 Canada Spotify</span>
           <span className='text-white/70 text-[12px] lg:text-[14px] inter-100'>#2 Apple Music</span>
         </section> 
-        <img src={Hero_Swift} alt="" className="brightness-80 h-[18rem] object-cover " />
+        <img src={Hero_Swift} alt="" className="brightness-80 h-[17rem] object-cover " />
 
       </section>
 
@@ -86,18 +86,17 @@ function Hero() {
       <article className='mt-30 mb-40 text-white flex flex-col items-center mx-auto'>
        
         <div className='mb-2 space-y-1'>
-          <section className='text-center space-y-[-8px]  '>
-            <h1 className='flex text-white/80'><span className='text-[24px] inter-100 ml-1'>Midnights</span><span className='text-[11px] inter-100'>®</span></h1>
-            <span className='inter-200 text-[12px] text-white/40'>New Album</span>
+          <section className='text-center   '>
+            <h1 className='flex text-white/80'><span className='text-3xl inter-100 ml-1'>Midnights</span><span className='text-[11px] inter-100'>®</span></h1>
+            <span className='inter-200 text-[14px] text-white/40'>New Album</span>
           </section>
         </div>
         
-          <img src={midnightsAlbum} alt="" className='h-52 w-52'/>
-          <span className='text-white/60 text-[9px] w-52 text-center inter-200 bg-black/60 py-[6px] '><span>44 minutes • Pop • 13 Songs </span> </span>
+          <img src={midnightsAlbum} alt="" className='h-60 w-60'/>
+          <span className='text-white/60 text-[11px] w-60 text-center inter-200 bg-black/60 py-2 '><span>44 minutes • Pop • 13 Songs </span> </span>
         
         <div className='flex flex-col items-center text-[10px] inter-200 text-white/60'>
-           <p className=' text-[10px] text-center max-w-56 mt-3 mb-4'>{textos.new_album_description} </p>
-               
+           <p className=' text-[12px] text-center mx-14 my-6'>{textos.new_album_description} </p>
         </div>
 
         <section className='border border-white/40 rounded-xl'>
@@ -115,7 +114,7 @@ function Hero() {
       <span className='text-[12px] text-white/50 mb-4 mx-12 '>T-shirt Sport - Running</span>
       <img src={ShirtMerchandising} alt="" className='h-80' />
       <span className='text-[12px] -mt-3 mb-2 text-white/50'>Editor's Collection</span>
-      <p className='text-[12px] text-white/50 mb-4 mx-12 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatum beatae maxime distinctio rerum ullam natus molestias dolorum eaque modi!</p>
+      <p className='text-[12px] text-white/50 mb-4 mx-10 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatum beatae maxime distinctio rerum ullam natus molestias dolorum eaque modi!</p>
           <section className='space-x-2'>
             <button className='bg-white/10 my-[2px] rounded-[8px]  py-2 px-7 inter-200 text-[14px] text-white/70'>More Info</button>
             <button className='bg-white/30 my-[2px] rounded-[8px]  py-2 px-7 inter-200 text-[14px] text-white/70 inter-300'>Find Out</button>
