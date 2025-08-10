@@ -22,8 +22,8 @@ function Hero() {
       {/* Presentation */}
       <section className='relative lg:mx-30 lg:px-6 xl:mx-96'>
         <div className='absolute z-1 flex flex-col ml-4 mt-6 p-2'>
-          <span className='text-white/80 text-[20px] lg:text-3xl inter-100 '>Taylor Alisson Swift</span>
-          <span className='text-white/60 text-[12px] lg:text-sm inter-200'>ElectroPop, Country, Pop</span>
+          <span className='text-white/80 text-[20px] lg:text-3xl inter-200 '>Taylor Alisson Swift</span>
+          <span className='text-white/60 text-[12px] lg:text-sm inter-300'>ElectroPop, Country, Pop</span>
         </div>
         
         <div className='absolute z-1 bottom-6 left-6 flex flex-col lg:left-16 lg:bottom-8 '>
@@ -37,9 +37,9 @@ function Hero() {
         </div>
 
          <section className='absolute z-1 flex flex-col bottom-6 right-6 text-end lg:bottom-8 lg:right-16'>
-          <span className='text-start text-white/70 text-[14px] lg:text-[18px] inter-200'>#1 USA on Spotify</span>
-          <span className='text-white/70 text-[12px] lg:text-[16px] inter-100'>#1 Canada Spotify</span>
-          <span className='text-white/70 text-[12px] lg:text-[14px] inter-100'>#2 Apple Music</span>
+          <span className='text-start text-white/70 text-[14px] lg:text-[18px] inter-300'>#1 USA on Spotify</span>
+          <span className='text-white/60 text-[12px] lg:text-[16px] inter-200'>#1 Canada Spotify</span>
+          <span className='text-white/60 text-[12px] lg:text-[14px] inter-200'>#2 Apple Music</span>
         </section> 
         <img src={Hero_Swift} alt="" className="brightness-80 h-[17rem] object-cover " />
 
@@ -86,17 +86,17 @@ function Hero() {
       <article className='mt-30 mb-40 text-white flex flex-col items-center mx-auto'>
        
         <div className='mb-2 space-y-1'>
-          <section className='text-center   '>
-            <h1 className='flex text-white/80'><span className='text-3xl inter-100 ml-1'>Midnights</span><span className='text-[11px] inter-100'>®</span></h1>
-            <span className='inter-200 text-[14px] text-white/40'>New Album</span>
+          <section className='text-center -space-y-2  '>
+            <h1 className='flex text-white/80'><span className='text-[26px] inter-100 ml-1'>Midnights</span><span className='text-[11px] inter-100'>®</span></h1>
+            <span className='inter-200 text-[12px] text-white/40'>New Album</span>
           </section>
         </div>
         
-          <img src={midnightsAlbum} alt="" className='h-60 w-60'/>
-          <span className='text-white/60 text-[11px] w-60 text-center inter-200 bg-black/60 py-2 '><span>44 minutes • Pop • 13 Songs </span> </span>
+          <img src={midnightsAlbum} alt="" className='h-56 w-56'/>
+          <span className='text-white/60 text-[10px] w-56 text-center inter-200 bg-black/60 py-2 '><span>44 minutes • Pop • 13 Songs </span> </span>
         
         <div className='flex flex-col items-center text-[10px] inter-200 text-white/60'>
-           <p className=' text-[12px] text-center mx-14 my-6'>{textos.new_album_description} </p>
+           <p className=' text-[12px] text-center mx-14 my-4'>{textos.new_album_description} </p>
         </div>
 
         <section className='border border-white/40 rounded-xl'>
