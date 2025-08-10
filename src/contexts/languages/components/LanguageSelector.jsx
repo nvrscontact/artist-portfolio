@@ -36,7 +36,7 @@ const LanguageSelector = () => {
     }
 
     return (
-    <div className='relative'>
+    <div className=''>
 
         <button onClick={alternarMenu} className='flex items-center gap-3'>
             <span className='text-[12px] lg:text-sm inter-200 text-white/70'>{idiomaActual.nombre}</span> 
@@ -46,21 +46,32 @@ const LanguageSelector = () => {
 
          {menuAbierto && (
 
-            <div className='absolute right-[-14px] z-2 mt-[15px] bg-black/60 inter-200 text-end'  > {idiomasDisponibles.map((idioma) => (
+            <div className='absolute right-0 top-12 z-2 bg-black/60 backdrop-blur-xl w-full inter-200 text-end'  > {idiomasDisponibles.map((idioma) => (  
+                <section key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='flex flex-cols justify-end '>
 
-                
-                <div key={idioma.codigo} onClick={() => seleccionarIdioma(idioma.codigo)} className='w-28 m-[2px] pr-2 flex flex-cols justify-end bg-white/10 '>
-
-                    <section className='flex gap-2 items-center text-white/70 lg:w-24 py-3 pr-2 w-full justify-end '>
+                    <ul className='flex gap-2 items-center text-white/60 lg:w-24 py-4 pr-2 w-full justify-end border-b border-white/10'>
                         <span className='text-[14px] lg:text-md '>{idioma.nombre} </span>
                         <img src={idioma.bandera} alt="" className='h-4' />
-                    </section>
-
-                </div>) )}
-
+                    </ul>
+                </section> 
+            ))}
             </div>)}
     </div>
 )
 }
 
 export default LanguageSelector;
+
+
+/* 
+
+  <section className='px-4 flex flex-col justify-between pt-5 pb-3 bg-black/60 backdrop-blur-xl text-white/70 inter-200 h-80'>
+
+              <ul className='flex flex-col gap-5 text-[14px] lg:text-sm  '>
+                <li className='border-b border-white/10 pb-3' onClick={closeMenu}><Link to='/store'>Store</Link> </li>
+                <li className='border-b border-white/10 pb-3 ' onClick={closeMenu}><Link to='/albums'>Albums</Link> </li>
+                <li className='border-b border-white/10 pb-3' onClick={closeMenu}><Link to='/support'>Support</Link> </li>
+                <li className='border-b border-white/10 pb-3 ' onClick={closeMenu}><Link to='/'>Home</Link> </li>
+              </ul>
+
+*/

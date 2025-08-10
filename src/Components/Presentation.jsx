@@ -6,6 +6,7 @@ import {LanguageContext} from '../contexts/languages/context/LanguageContext';
 import Hero_Swift from '../assets/hero_swift.jpg'
 import midnightsAlbum from '../assets/midnightsAlbum.jpg'
 import LinkImg from '../assets/arrow_link.svg'
+import songWhite from '../assets/songWhite.svg'
 
 
 
@@ -26,10 +27,10 @@ function Hero() {
         
         <div className='absolute z-1 bottom-6 left-6 flex flex-col lg:left-16 lg:bottom-8 '>
           
-          <section className='flex items-center gap-1 bg-[#5050508c] py-2 pl-3 pr-[6px] w-fit '>
+          <button className='flex items-center gap-1 bg-[#5050508c] rounded-md py-2 pl-3 pr-[6px] w-fit '>
             <span className='text-white/70 text-[12px] lg:text-sm inter-200'> <Link to="/albums">{textos.stream}</Link></span>
             <img src={LinkImg} alt="" className='h-[10px]'  />
-          </section>
+          </button>
           <span className='text-white/40 text-[9px] lg:text-[10px] pl-1 pt-[3px]'>{textos.stream_description}</span>
 
         </div>
@@ -39,75 +40,63 @@ function Hero() {
           <span className='text-white/70 text-[12px] lg:text-[16px] inter-100'>#1 Canada Spotify</span>
           <span className='text-white/70 text-[12px] lg:text-[14px] inter-100'>#2 Apple Music</span>
         </section> 
-        <img src={Hero_Swift} alt="" className="brightness-60  " />
+        <img src={Hero_Swift} alt="" className="brightness-80 h-[19rem] object-cover " />
 
       </section>
 
        {/* Slider */}
        <aside className="lg:mx-30 xl:mx-96 ">
-        <div className='relative overflow-hidden w-full'>
-
-        <div className="flex w-max carousel-track bg-black/60">
+        <section className='relative overflow-hidden w-full'>
+          <div className="flex w-max carousel-track bg-black/60">
           
-          <div className="shrink-0 space-x-10 p-2 px-4 text-[12px] text-white/80 inter-200 flex lg:text-sm ">
-                  <div><span className='text-[#7274f7]'>Midnights</span> {textos.album_available}! </div>
-            <div>{textos.runs_out}</div>
-            <div className=''>Buy your tickets <span className='text-[#5f8eb9] mx-2'>#Tour2025</span> before June</div>
-            <div>10% discount in album store</div>
-          </div>
-        
-          <div className="shrink-0 space-x-10 p-2 px-4 text-[12px]  text-white/80 inter-200 flex lg:text-sm">
-            <div><span className='text-[#7274f7]'>Midnights</span> {textos.album_available}! </div>
-            <div>{textos.runs_out}</div>
-            <div className=''>Buy your tickets <span className='text-[#5f8eb9] mx-2'>#Tour2025</span> before June</div>
-            <div>10% discount in album store</div>
-          </div>
+            <p className="shrink-0 space-x-10 py-[10px] px-4 text-[12px] text-white/70 inter-200 flex lg:text-sm ">
+              <span><span className='text-white'>Midnights</span> {textos.album_available}! </span>
+              <span>{textos.runs_out}</span>
+              <span>Buy your tickets for <span className='text-white'>#Tour2025</span> before June</span>
+              <span>10% discount in album store</span>
+            </p>
+          
+        <p className="shrink-0 space-x-10 py-[10px] px-4 text-[12px] text-white/70 inter-200 flex lg:text-sm ">
+              <span><span className='text-white'>Midnights</span> {textos.album_available}! </span>
+              <span>{textos.runs_out}</span>
+              <span>Buy your tickets for <span className='text-white'>#Tour2025</span> before June</span>
+              <span>10% discount in album store</span>
+            </p>
 
-         <div className="shrink-0 space-x-10 p-2 px-4 text-[12px]  text-white/80 inter-200 hidden lg:flex lg:text-sm">
-         <div><span className='text-[#7274f7]'>Midnights</span> {textos.album_available}! </div>
-            <div>{textos.runs_out}</div>
-            <div className=''>Buy your tickets <span className='text-[#5f8eb9] mx-2'>#Tour2025</span> before June</div>
-            <div>10% discount in album store</div>
-          </div>
+       <p className="shrink-0 space-x-10 py-[10px] px-4 text-[12px] text-white/70 inter-200 flex lg:text-sm ">
+              <span><span className='text-white'>Midnights</span> {textos.album_available}! </span>
+              <span>{textos.runs_out}</span>
+              <span>Buy your tickets for <span className='text-white'>#Tour2025</span> before June</span>
+              <span>10% discount in album store</span>
+            </p>
 
-         <div className="shrink-0 space-x-10 p-2 px-4 text-[12px]  text-white/80 inter-200 hidden lg:flex lg:text-sm">
-               <div><span className='text-[#7274f7]'>Midnights</span> {textos.album_available}! </div>
-            <div>{textos.runs_out}</div>
-            <div className=''>Buy your tickets <span className='text-[#5f8eb9] mx-2'>#Tour2025</span> before June</div>
-            <div>10% discount in album store</div>
-          </div>
+         <p className="shrink-0 space-x-10 py-[10px] px-4 text-[12px] text-white/70 inter-200 flex lg:text-sm ">
+              <span><span className='text-white'>Midnights</span> {textos.album_available}! </span>
+              <span>{textos.runs_out}</span>
+              <span>Buy your tickets for <span className='text-white'>#Tour2025</span> before June</span>
+              <span>10% discount in album store</span>
+            </p>
 
-        </div>
-        </div>
+          </div>
+        </section>
        </aside> 
 
        {/* New Album */}
-      <article className='my-16 text-white flex flex-col items-center mx-auto max-w-52'>
+      <article className='my-16 text-white flex flex-col items-center mx-auto'>
        
-        <div className='flex flex-col items-center mb-2 space-y-1'>
+        <div className='mb-2 space-y-1'>
           <section className='text-center space-y-[-8px]  '>
-            <h1 className='flex text-white/80'><span className='text-[24px] inter-100 ml-1'>Midnights</span><span className='text-[12px] inter-100'>®</span></h1>
+            <h1 className='flex text-white/80'><span className='text-[24px] inter-100 ml-1'>Midnights</span><span className='text-[11px] inter-100'>®</span></h1>
             <span className='inter-200 text-[12px] text-white/40'>New Album</span>
           </section>
-          </div>
-
-        <img src={midnightsAlbum} alt="" className='h-52 w-52'/>
-        <span className='text-white/70 text-[10px] w-52 text-center inter-200 bg-black/60 py-[6px] mb-2'>February 2013 </span>
+        </div>
+        
+          <img src={midnightsAlbum} alt="" className='h-52 w-52'/>
+          <span className='text-white/60 text-[9px] w-52 text-center inter-200 bg-black/60 py-[6px] '><span>44 minutes • Pop • 13 Songs </span> </span>
         
         <div className='flex flex-col items-center text-[10px] inter-200 text-white/60'>
-           <span className='text-white/50'>13 songs • 44 minutes • Pop</span>
-           <p className='mt-1 mb-4 text-[10px] text-center'>{textos.new_album_description} </p>
-          <section className='flex gap-1'> 
-              <button className='flex items-center'>
-                <span className='bg-white/70 py-[10px] px-4 flex flex-1 text-[12px] text-black/80 lg:text-sm inter-500'> <Link to="/store">Tour</Link></span>
-               </button>
-              <button className='flex items-center'>
-                <span className='bg-white/70 flex justify-center items-center px-4 h-full w-full text-[12px] text-black/80 lg:text-sm inter-500'> <Link to="/store">Buy Album</Link></span>
-                <span className='bg-white/50 flex items-center px-2 h-full'>
-                 <img src={LinkImg} alt="" className='h-6' />
-                </span>
-               </button>
-          </section>
+           <p className=' text-[10px] text-center max-w-56 mt-3 mb-4'>{textos.new_album_description} </p>
+     
         </div>
 
       </article>
@@ -120,3 +109,5 @@ function Hero() {
 }
 
 export default Hero
+
+/* <Link to="/store">Buy Album</Link> <img src={LinkImg} alt="" className='h-3' /> */

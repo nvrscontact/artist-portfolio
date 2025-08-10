@@ -2,11 +2,13 @@ import React from 'react'
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import ApplePay from '../assets/apple_pay.svg'
-import AmericanExpress from '../assets/american_express_pay.svg'
-import Paypal from '../assets/paypal_pay.svg'
-import Visa from '../assets/visa_pay.svg'
-import Mastercard from '../assets/mastercard_pay.svg'
+import apple_pay from '../assets/apple_pay.svg'
+import american_express_pay from '../assets/american_express_pay.svg'
+import paypal_pay from '../assets/paypal_pay.svg'
+import visa_pay from '../assets/visa_pay.svg'
+import mastercard_pay from '../assets/mastercard_pay.svg'
+import maestro_pay from '../assets/maestro_pay.svg'
+import klarna_pay from '../assets/klarna_pay.svg'
 
 function Store() {
      const { hash } = useLocation();
@@ -49,13 +51,13 @@ function Store() {
         <article className=''>
           <h1 className='text-center mb-1 text-white/60 inter-200 text-[12px] '>Payment methods available</h1>
           <div className='flex gap-2 [&>*]:h-6 '>
-                <img src={Visa} alt="" />
-                <img src={ApplePay} alt="" />
-                <img src={Mastercard} alt="" />
-                <img src={AmericanExpress} alt="" />
-                <img src={Paypal} alt="" />
-                <img src={Visa} alt="" />
-                <img src={Paypal} alt="" />
+                <img src={visa_pay} alt="" />
+                <img src={apple_pay} alt="" />
+                <img src={mastercard_pay} alt="" />
+                <img src={american_express_pay} alt="" />
+                <img src={paypal_pay} alt="" />
+                <img src={maestro_pay} alt="" />
+                <img src={klarna_pay} alt="" />
           </div>
         </article>
 
