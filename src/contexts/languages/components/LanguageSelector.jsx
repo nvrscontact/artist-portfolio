@@ -61,17 +61,3 @@ const LanguageSelector = () => {
 }
 
 export default LanguageSelector;
-
-
-/* 
-
-  <section className='px-4 flex flex-col justify-between pt-5 pb-3 bg-black/60 backdrop-blur-xl text-white/70 inter-200 h-80'>
-
-              <ul className='flex flex-col gap-5 text-[14px] lg:text-sm  '>
-                <li className='border-b border-white/10 pb-3' onClick={closeMenu}><Link to='/store'>Store</Link> </li>
-                <li className='border-b border-white/10 pb-3 ' onClick={closeMenu}><Link to='/albums'>Albums</Link> </li>
-                <li className='border-b border-white/10 pb-3' onClick={closeMenu}><Link to='/support'>Support</Link> </li>
-                <li className='border-b border-white/10 pb-3 ' onClick={closeMenu}><Link to='/'>Home</Link> </li>
-              </ul>
-
-*/

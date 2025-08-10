@@ -16,44 +16,26 @@
   font-weight: 300;
   font-style: normal;
 }
-.inter-400 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.inter-500 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-.inter-600 {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
 
 
-   .carousel-track {
-    display:flex;
-    width:max-content;
-    animation: scroll-left 35s linear infinite;
-    animation-timing-function: linear;
-    
-    }
-    @media screen and (min-width:1400px){
-      .carousel-track{
-        animation-duration:35s;
-      }
-    }
+.carousel-track {
+display:flex;
+width:max-content;
+animation: scroll-left 35s linear infinite;
+animation-timing-function: linear;
 
-    @keyframes scroll-left {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
+}
+@media screen and (min-width:1400px){
+  .carousel-track{
+    animation-duration:35s;
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

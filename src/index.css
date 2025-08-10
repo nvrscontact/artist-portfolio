@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.secondTop{
+    @apply text-white/60 text-[12px] lg:text-[16px];
+}
+
+.btn {
+    @apply my-[2px] rounded-[8px] py-2 px-7 text-[14px] text-white/70
+}
+
+.navLink{
+    @apply border-b border-white/10 pb-3;
+}

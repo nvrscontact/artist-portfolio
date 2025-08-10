@@ -1,9 +1,6 @@
-
 import React, {useContext} from 'react';
 import {LanguageContext} from '../contexts/languages/context/LanguageContext';
 import { Link } from 'react-router-dom';
-
-/* '../languages/context/LanguageContext' */
 
 function Footer() {
       const {textos} = useContext(LanguageContext);
@@ -24,7 +21,7 @@ function Footer() {
 
         <div className='flex flex-col gap-9 [&>*]:gap-2 lg:[&>*>*]:text-sm '>
 
-          <section className='flex flex-col text-[11px] '>
+          <section className='flex flex-col space-y-1 text-[12px] '>
             <h2 className=' text-white/70 text-[15px] mb-1'>Artist</h2>
             <Link to='/contact'>{textos.contact}</Link>
             <Link to='/store#store'>{textos.store}</Link>
@@ -32,7 +29,7 @@ function Footer() {
             <Link to='/tour'>{textos.tour}</Link>
           </section>
 
-          <section className='flex flex-col text-[11px] '>
+          <section className='flex flex-col space-y-1 text-[12px] '>
             <h2 className=' text-white/70 text-[15px] mb-1'>Information</h2>
             <Link to='/support#support'>{textos.support}</Link>
             <Link to='/support#accesibility'>{textos.accesibility}</Link>
@@ -40,8 +37,8 @@ function Footer() {
 
         </div>
 
-        <div className='flex flex-col text-[11px] gap-2 lg:[&>*]:text-sm'>
-          <h2 className=' text-white/70 text-[15px] mb-1'>Legal and Privacy</h2>
+        <div className='flex flex-col gap-2 text-[12px] lg:[&>*]:text-sm'>
+          <h2 className='text-white/70 text-[15px] mb-1'>Legal and Privacy</h2>
           <Link to='/privacy#terms' >{textos.terms}</Link>
           <Link to='/privacy#cookies'>{textos.cookie}</Link>
           <Link to='/privacy#privacy'>{textos.privacy}</Link>

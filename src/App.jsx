@@ -2,23 +2,20 @@ import './App.css'
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
-
 import Layout from './Layout';
-
-
-import {LanguageProvider} from './contexts/languages/context/LanguageContext';
 import {GlobalContext} from './contexts/GlobalContext';
 
 
 import HomePage from './Pages/HomePage'
 import Privacy from './Pages/Privacy';
-import Hear from './Pages/Hear';
-import Albums from './Pages/Albums';
+import Hear from './Pages/HearAlbum';
+import Albums from './Pages/SelectAlbum';
 import Support from './Pages/Support';
 import Tour from './Pages/Tour';
 import Contact from './Pages/Contact';
-import Store from './Pages/Store';
 
+import Store from './Pages/Store';
+import Newsletter from './Pages/Newsletter';
 
 function App() {
 
@@ -37,6 +34,7 @@ function App() {
               <Route path='/albums' element={<Albums/>} />
               <Route path='/support' element={<Support/>} />
               <Route path='/store' element={<Store/>} />
+              <Route path='/newsletter' element={<Newsletter/>} />
             </Route>
           </Routes>
         </Router>
@@ -46,6 +44,3 @@ function App() {
 }
 
 export default App
-
-
-/*  './languages/context/LanguageContext' */

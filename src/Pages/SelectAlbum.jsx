@@ -1,6 +1,3 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-
 import Style_Album from '../assets/style_album.jpg';
 import Red_Album from '../assets/red_album.jpg';
 import midnightsAlbum from '../assets/midnightsAlbum.jpg';
@@ -8,7 +5,7 @@ import midnightsAlbum from '../assets/midnightsAlbum.jpg';
 import { useNavigate } from 'react-router-dom';
 import { useImage } from '../contexts/album_img/ImageContext';
 
-function Albums() {
+function SelectAlbum() {
 
     const navigate = useNavigate();
     const {setSelectedImage} = useImage();
@@ -54,11 +51,9 @@ function Albums() {
         setSelectedImage(image);
         navigate('../Hear');
     }
-
   return (
     <>
     <div className='mt-10 mb-20 flex flex-col'>      
-
         <section className='flex flex-col items-center mb-8 inter-200  '>
           <h1 className='text-white/70 text-3xl inter-200 text-center '>Albums</h1>
           <span className='text-white/40 text-[12px] '>Complete Discography</span>
@@ -89,4 +84,4 @@ function Albums() {
     )
 }
 
-export default Albums
+export default SelectAlbum
